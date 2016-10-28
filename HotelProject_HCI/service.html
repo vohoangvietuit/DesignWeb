@@ -1,19 +1,11 @@
-<!--A Design by W3layouts 
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Best Hotel a  Travel Agency Category Flat Bootstrap Responsive website Template | Restaurant :: w3layouts</title>
+<title>Services - New World Hotel</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/font-awesome.css" rel="stylesheet">
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -24,18 +16,88 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---->
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/font-awesome.min.css"> 
+<script src="js/javascript.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!---strat-date-piker-->
+<!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+
 </head>
 <body>
-<div class="banner">
-		
+<!-- begin header -->
+	<div class="banner-section">
+		<section class="slider">
+			<div class="flexslider">
+				<ul class="slides">
+					<li>
+						<div class="slider-info">
+							<img src="images/restaurant/d1.jpg" class="img-responsive" alt="">
+						</div>
+
+					</li>
+
+					<li>
+						<div class="slider-info">
+								<img src="images/restaurant/w1.jpg" class="img-responsive" alt="">
+						</div>
+					</li>					
+
+					<li>
+						<div class="slider-info">
+							<img src="images/restaurant/d3.jpg" class="img-responsive" alt="">
+						</div>
+
+					</li>
+
+					<li>
+						<div class="slider-info">
+								<img src="images/restaurant/m1.jpg" class="img-responsive" alt="">
+						</div>
+					</li>					
+					<li>
+						<div class="slider-info">
+								<img src="images/restaurant/d5.jpg" class="img-responsive" alt="">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+			<!-- FlexSlider -->
+			<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(function(){
+						SyntaxHighlighter.all();
+					});
+					$(window).load(function(){
+					$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+					});
+					});
+				</script>
+			<!-- FlexSlider -->
 	</div>
-    <div class="header">
+
+	<div class="header">
 		<div class="container">
 			<div class="header-menu">
 				<nav class="navbar navbar-default">
@@ -49,19 +111,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<span class="icon-bar"></span>
 						  </button>
 						  <div class="navbar-brand logo">
-							<h1><a href="index.html"><span>Best  </span> Hotel</a></h1>
+								<h1><a href="index.html"><span>New World </span> Hotel</a></h1>
 							</div>
 						</div>
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						   <ul class="nav navbar-nav">
+						  <ul class="nav navbar-nav">
 							<li><a href="index.html" data-hover="Home">Home </a></li>
-							<li><a href="about.html" data-hover="About">About</a></li>
-							<li class="active"><a data-hover="Restaurant" href="restaurant.html">Restaurant</a></li>
-							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
 							<li><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
-							  <li><a  href="codes.html" data-hover="codes">Codes</a></li>
-							 <li><a data-hover="Contact" href="contact.html">Contact</a></li>
+							<li class="active"><a data-hover="Services" href="service.html">Services</a></li>
+							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
+							<li><a data-hover="About" href="about.html">About</a></li>
+							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
+							<li><a data-hover="Location" href="index.html#location">Location</a></li>
 							 
 						  </ul>
 						</div><!-- /.navbar-collapse -->
@@ -71,55 +133,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 		</div> 
 	</div>
+<!-- end header	 -->		
+
 			
 		<div class="content">
 			<div class="restaurant">
 				<div class="container">
-					<h2 class="tittle">Restaurant</h2>
+					<h1 class="tittle">Services</h2>
 					<div class="rest-grids">
 						<div class="col-md-8 rest-grid">
 							<div class="rest-top">
-								<h3>Royal Hyanni Dining</h3>
-								<img src="images/r1.jpg" class="img-responsive gray" alt=""/>
-								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled printer took a galley of type and scrambled since it to make a type specimen book.</p>
+								<h3>Dining</h3>
+								<img src="images/restaurant/d7.jpg" class="img-responsive gray" alt=""/>
+								<p>New World Saigon Hotel delivers excellent dining opportunities, with attractive restaurant designs and superb cuisines created by an outstanding team of chefs.</p>
 								<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
 							</div>
 							<div class="rest-bottom">
 								<div class="col-md-6 rest-left">
-									<img src="images/r2.jpg" class="img-responsive gray" alt=""/>
-									<h4>Family Dining</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+									<img src="images/restaurant/d9.jpg" class="img-responsive gray" alt=""/>
+									<h4>Club Epicure</h4>
+									<p>At New World Saigon Hotel, guests discover a place where the hospitality is warm and care is always genuine. Club Epicure elevates the New World Saigon Hotel experience to a higher level for its discerning clientele.</p>
 								</div>
 								<div class="col-md-6 rest-right">
-								<img src="images/r3.jpg" class="img-responsive gray" alt=""/>
-									<h4>Casual Dining</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+								<img src="images/restaurant/d6.jpg" class="img-responsive gray" alt=""/>
+									<h4>Dynasty</h4>
+									<p>Featuring a modern design with touches of traditional Chinese décor, Dynasty is as pleasing to the eye as it is to the palate. Master Chef Alan Hew Wai Seng presents an extensive range of authentic Cantonese dishes.</p>
 								</div>
 								<div class="clearfix"></div>
 							</div>
 							<div class="rest-bottom">
 								<div class="col-md-6 rest-left">
-									<img src="images/r4.jpg" class="img-responsive gray" alt=""/>
-									<h4>Buffet Dining</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+									<img src="images/restaurant/l1.jpg" class="img-responsive gray" alt=""/>
+									<h4>The Lounge</h4>
+									<p>The Lounge welcomes guests with light jazz music and the aroma of freshly brewed coffee and teas. The Lounge features gentle ambient lighting and presents an extensive drink menu tailored for all tastes.</p>
 								</div>
 								<div class="col-md-6 rest-right">
-								<img src="images/r5.jpg" class="img-responsive gray" alt=""/>
+								<img src="images/restaurant/w1.jpg" class="img-responsive gray" alt=""/>
 									<h4>Wedding Dining</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+									<p>With flexible planning arrangements and elegant décor, the five-star wedding venues at New World Saigon Hotel promise to make every wedding party a spectacular success.</p>
 								</div>
 								<div class="clearfix"></div>
 							</div>
 							<div class="rest-bottom">
 								<div class="col-md-6 rest-left">
-									<img src="images/r6.jpg" class="img-responsive gray" alt=""/>
-									<h4>Bars and Lounges </h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+									<img src="images/restaurant/d5.jpg" class="img-responsive gray" alt=""/>
+									<h4>Splash Pool Bar</h4>
+									<p>The lively, casual spirit of Splash Pool Bar is reflected in its creative menu, which offers snacks and a refreshing range of juice-infused drinks.</p>
 								</div>
 								<div class="col-md-6 rest-right">
-								<img src="images/r8.jpg" class="img-responsive gray" alt=""/>
-									<h4>Outdoor Dining </h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+								<img src="images/restaurant/b1.jpg" class="img-responsive gray" alt=""/>
+									<h4>Saigon Bakery</h4>
+									<p>Located on the ground floor, Saigon Bakery is an inviting place to enjoy a cup of freshly brewed coffee or tea. The relaxing environment makes this a pleasant place to enjoy various home-made pastries, cakes and pralines.</p>
 								</div>
 								<div class="clearfix"></div>
 							</div>
@@ -139,11 +203,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</div>
 								<h5>Adults:</h5>
 								<div class="best-hot1">
-									<input type="text" value="Adults" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type Here';}" required="">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
 								</div>
 								<h5>Kids:</h5>
 								<div class="best-hot1">
-									<input type="text" value="Kids" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Type Here';}" required="">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
 								</div>
 								<h5>Room:</h5>
 								<select class="sel1">
@@ -162,12 +236,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 							<div class="lastest">
 								<div class="lastest-top">
-								<img src="images/w5.jpg" class="img-responsive gray" alt=""/>
-									<h4>Luxury Resort</h4>
-									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
+								<img src="images/restaurant/m1.jpg" class="img-responsive gray" alt=""/>
+									<h4>Meetings & Events</h4>
+									<p>New World Saigon Hotel presents highly flexible event spaces that feature cutting-edge technology, making it an ideal location for special events and corporate meetings.</p>
 								</div>
 								<div class="lastest-top">
-								<img src="images/ga7.jpg" class="img-responsive gray" alt=""/>
+								<img src="images/b5.jpg" class="img-responsive gray" alt=""/>
 									<h4>Swinging Pool</h4>
 									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown .</p>
 								</div>
@@ -178,11 +252,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 		</div>		
+<!-- begin footer -->
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
 					<div class="col-md-3 footer-grid">
-						<h4>Get In Touch</h4>
+						<h4>Contact</h4>
 						<ul>
 							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
@@ -191,7 +266,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Site Links</h4>
+						<h4>Hotel top links</h4>
 						<ul>
 							<li>Our Story</li>
 							<li>Sleep Program</li>
@@ -202,10 +277,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-3 footer-grid">
 						<h4>Our Rooms</h4>
 						<ul>
-							<li>Superior Room</li>
-							<li>Deluxe Room</li>
-							<li>Business Room</li>
-							<li>Executive Corner Room</li>
+							<li>Guest Room</li>
+							<li>Residence Club Room</li>
+							<li>Suite</li>
+							<li>Residence Club</li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
@@ -225,7 +300,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>&copy; 2016 Best Hotel. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+						<p>All rights reserved - DoubleV</p>
 					</div>
 					<div class="social-icons">
 						<a href="#"><i class="icon"></i></a>
@@ -235,7 +310,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 				</div>
 			</div>
-	<!--footer-->
+		<!--footer-->
+
+<!-- end footer -->
 
 </body>
 </html>

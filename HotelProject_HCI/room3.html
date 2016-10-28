@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Best Hotel a  Travel Agency Category Flat Bootstrap Responsive website Template | Contact :: w3layouts</title>
+<title>Suite - New World Hotel</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/font-awesome.css" rel="stylesheet">
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,15 +16,36 @@
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!---->
+<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/font-awesome.min.css"> 
+<script src="js/javascript.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!---strat-date-piker-->
+<!-- requried-jsfiles-for owl -->
+							<link href="css/owl.carousel.css" rel="stylesheet">
+							    <script src="js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+
 </head>
 <body>
+<!-- begin header -->
 	<div class="banner">
-		<img src="" alt="">
+		
 	</div>
+
 	<div class="header">
 		<div class="container">
 			<div class="header-menu">
@@ -48,11 +67,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
 							<li><a href="index.html" data-hover="Home">Home </a></li>
-							<li><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
+							<li class="active"><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
 							<li><a data-hover="Services" href="service.html">Services</a></li>
 							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
 							<li><a data-hover="About" href="about.html">About</a></li>
-							<li class="active"><a data-hover="Contact" href="contact.html">Contact</a></li>
+							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
 							<li><a data-hover="Location" href="index.html#location">Location</a></li>
 							 
 						  </ul>
@@ -63,43 +82,86 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 		</div> 
 	</div>
-		<!--header-->		
+<!-- end header	 -->		
+
+			
 		<div class="content">
-			<!--contact-->
-			<div class="contact">
+			<div class="restaurant">
 				<div class="container">
-					<h2 class="tittle">How To Find Us</h2>
-					<div class="contact-bottom">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.108375380214!2d106.6947847!3d10.7708829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ab6e5fe92c2e5d7!2sNew+World+Saigon+Hotel!5e0!3m2!1svi!2s!4v1477566574264" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<h1 class="tittle">Suite</h2>
+					<div class="rest-grids">
+						<div class="col-md-8 rest-grid">
+							<div class="rest-top">
+								<h3>Infomation</h3>
+								<img src="images/room/s2.jpg" class="img-responsive gray" alt=""/>
+								<p>New World Saigon Hotel offers 25 One-Bedroom Suites at 69.5 square meters, two Director’s Suites at 91 square meters and one Presidential Suite at 181 square meters. With impressive views of the stunning city skyline, the spacious, Suites are provided with luxurious Elemis toiletries.  Director’s Suites and the Presidential Suite also contain a fully equipped kitchenette.</p>
+							</div>
+							<h4 class="detail">Detail & Amenities</h4>
+								<ul class="ul1" style="padding-bottom: 0px; margin-bottom: 0px;">
+									<li>King or two twin beds</li>
+									<li>Complimentary Wi-Fi access</li>
+									<li>42’ LCD TV with international channels</li>
+									<li>Marble bathroom with walk-in shower room and bathtub</li>
+									<li>Full set of high quality Elemis toiletries</li>
+									<li>Hairdryer</li>
+									<li>Large work desk</li>
+									<li>IDD phone with voice message system</li>
+									<li>Coffee and tea-maker</li>
+									<li>Mini-bar</li>
+								</ul>
+							</div>
+						<div class="col-md-4 rest-grid1">
+							<h3>Make a Reservation</h3>
+							<div class="reser-grid1">
+								<h5>Check in</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Check out</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Adults:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Kids:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Room:</h5>
+								<select class="sel1">
+									<option value="">All</option>
+									<option value="">Family Room</option>
+									<option value="">Standard Room</option>
+									<option value="">Deluxe Room</option>
+									<option value="">Luxury Room</option>
+									<option value="">Single Room</option>
+								</select>
+								<div class="best-hot">
+									<form action="#" method="post">
+										<input type="submit" value="Check Availabity">
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
 					</div>
-					<div class="col-md-4 contact-left">
-						<h4>Address</h4>
-							<p>76 Le Lai Street, District 1, Ho Chi Minh City, Vietnam
-								Tel: +84 8 3822 8888 <br>Fax: +84 8 3823 0710</p>
-						<ul>
-							<li>Free Phone :+1 078 4589 2456</li>
-							<li>Telephone :+1 078 4589 2456</li>
-							<li>Fax :+1 078 4589 2456</li>
-							<li><a href="mailto:info@example.com">info@example.com</a></li>
-						</ul>
-					</div>
-					<div class="col-md-8 contact-left cont">
-						<h4>Contact Form</h4>
-						<form action="#" method="post">
-							<input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-							<input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-							<input type="text" name="Phone" value="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" required="">
-							<textarea type="text" name="Message"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-							<input type="submit" value="Submit" >
-							<input type="reset" value="Clear" >
-						</form>
-					</div>
-					<div class="clearfix"> </div>
 				</div>
 			</div>
-			<!--contact-->
-		</div>
-
+		</div>		
 <!-- begin footer -->
 		<div class="footer-section">
 			<div class="container">

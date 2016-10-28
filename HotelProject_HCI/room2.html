@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Rooms - New World Hotel</title>
+<title>Residence Club Room - New World Hotel</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -18,8 +18,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!---strat-date-piker-->
 <!-- requried-jsfiles-for owl -->
 							<link href="css/owl.carousel.css" rel="stylesheet">
 							    <script src="js/owl.carousel.js"></script>
@@ -40,41 +42,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 <!-- begin header -->
-	<div class="banner-section">
-		<section class="slider">
-			<div class="flexslider">
-				<ul class="slides">
-					<li>
-						<div class="slider-info">
-							<img src="images/room/g2.jpg" class="img-responsive" alt="">
-						</div>
-					</li>
-
-					<li>
-						<div class="slider-info">
-							<img src="images/room/g3.jpg" class="img-responsive" alt="">
-						</div>
-					</li>			
-
-				</ul>
-			</div>
-		</section>
-			<!-- FlexSlider -->
-			<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-					$(function(){
-						SyntaxHighlighter.all();
-					});
-					$(window).load(function(){
-					$('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-					});
-					});
-				</script>
-			<!-- FlexSlider -->
+	<div class="banner">
+		
 	</div>
 
 	<div class="header">
@@ -98,12 +67,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
 							<li><a href="index.html" data-hover="Home">Home </a></li>
-							<li  class="active"><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
+							<li class="active"><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
 							<li><a data-hover="Services" href="service.html">Services</a></li>
 							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
 							<li><a data-hover="About" href="about.html">About</a></li>
 							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							<li><a data-hover="Location" href="location.html">Location</a></li>
+							<li><a data-hover="Location" href="index.html#location">Location</a></li>
 							 
 						  </ul>
 						</div><!-- /.navbar-collapse -->
@@ -113,110 +82,86 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 		</div> 
 	</div>
-<!-- end header	 -->	
+<!-- end header	 -->		
 
+			
 		<div class="content">
-			<!-- room -->
-			<div class="welcome">
+			<div class="restaurant">
 				<div class="container">
-					<h2 class="tittle">ROOMS & SUITES</h2>
-						<p class="wel text1">Exquisitely appointed with a blend of muted sable and white tones, all rooms and suites feature fine décor and comprehensive amenities.</p>
-					<div class="wel-grids">
-						 <div class="col-md-3 wel-grid">
-						 	<a href="room1.html" class="tt1">
-								<img src="images/room/g3.jpg" class="img-responsive gray" alt=""/>
-								<h4>Guest Room</h4>
-							</a>
-							<p class="info-room">New World Saigon Hotel offers three guestroom types: Superior Rooms, Deluxe Rooms and Premier Rooms, all situated from level two to level nine. With impressive park and street views, guestrooms are well equipped with all the requisite amenities for a most comfortable stay.</p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<a href="room2.html" class="tt1">
+					<h1 class="tittle">Residence Club Room</h2>
+					<div class="rest-grids">
+						<div class="col-md-8 rest-grid">
+							<div class="rest-top">
+								<h3>Infomation</h3>
 								<img src="images/room/r1.jpg" class="img-responsive gray" alt=""/>
-								<h4>Residence Club Room</h4>
-							</a>
-							<p class="info-room">Elegantly situated on the Residence Club Floor from level 10 to 14, Residence Club Rooms offer striking views of the city with deluxe in-room amenities. With exclusive access to the Residence Club, guests can enjoy many private club benefits and privileges.</p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<a href="room3.html" class="tt1">
-								<img src="images/room/s1.jpg" class="img-responsive gray" alt=""/>
-								<h4>Suite</h4>
-							</a>
-							<p class="info-room">Beautifully decorated suites at New World Saigon Hotel are offered in three categories: One-Bedroom Suite, Director’s Suite and Presidential Suite. Guests staying in the hotel’s suites can enjoy added privacy at the Residence Club with an extensive range of exclusive privileges and benefits.</p>
-						</div>
-						<div class="col-md-3 wel-grid">
-							<a href="room4.html" class="tt1">
-								<img src="images/room/c1.jpg" class="img-responsive gray" alt=""/>
-								<h4>Residence Club</h4>
-							</a>
-							<p class="info-room">Guests staying on Residence Club floors and in suites can enjoy exclusive access to the Residence Club Living Room – a comfortable and welcoming private space offering exclusive benefits and privileges.</p>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
-			<!-- end room -->
-			<div class="reservation">
-				<div class="container">
-					<h3 class="tittle">Make reservation</h3>
-					<div class="reservation-grids">
-						<div class="col-md-4 reser-grid">
-							<h5>Check in</h5>
-							<div class="book_date">							
-								<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-								<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								<p>Located from level 10 to 14, the 30-square-meter Residence Club Deluxe Rooms present premium accommodation, with marble bathroom and a large work desk. With exclusive access to the Residence Club Living Room, guests can enjoy a wide range of exclusive privileges and benefits. </p>
 							</div>
-						</div>
-						<div class="col-md-4 reser-grid">
-							<h5>Check out</h5>
-							<div class="book_date">							
-								<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-								<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+							<h4 class="detail">Detail & Amenities</h4>
+								<ul class="ul1" style="padding-bottom: 0px; margin-bottom: 0px;">
+									<li>King or two twin beds</li>
+									<li>Complimentary WiFi access</li>
+									<li>42’ LCD TV with international channels</li>
+									<li>Marble bathroom with walk-in shower room and bathtub</li>
+									<li>Full set of high quality Elemis toiletries</li>
+									<li>Hairdryer</li>
+									<li>Large working desk</li>
+									<li>IDD phone with voice message box</li>
+									<li>Coffee / Tea-maker</li>
+									<li>Mini-bar</li>
+								</ul>
 							</div>
-
-						</div>
-						<div class="col-md-4 reser-grid">
-							<h5>Adults:</h5>
-							<select class="sel">
-								<option value="">0</option>
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3 or 3+</option>
-							</select>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-					<div class="reservation-grids">
-						<div class="col-md-4 reser-grid">
-							<h5>Kids:</h5>
-							<select class="sel">
-								<option value="">0</option>
-								<option value="">1</option>
-								<option value="">2</option>
-								<option value="">3 or 3+</option>
-							</select>
-						</div>
-						<div class="col-md-4 reser-grid">
-							<h5>Room:</h5>
-							<select class="sel">
-								<option value="">All</option>
-								<option value="">Family Room</option>
-								<option value="">Standard Room</option>
-								<option value="">Deluxe Room</option>
-								<option value="">Luxury Room</option>
-								<option value="">Single Room</option>
-							</select>
-						</div>
-						<div class="col-md-4 reser-grid">
-							<div class="best-hot">
-								<input type="submit" value="Search">
+						<div class="col-md-4 rest-grid1">
+							<h3>Make a Reservation</h3>
+							<div class="reser-grid1">
+								<h5>Check in</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Check out</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Adults:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Kids:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Room:</h5>
+								<select class="sel1">
+									<option value="">All</option>
+									<option value="">Family Room</option>
+									<option value="">Standard Room</option>
+									<option value="">Deluxe Room</option>
+									<option value="">Luxury Room</option>
+									<option value="">Single Room</option>
+								</select>
+								<div class="best-hot">
+									<form action="#" method="post">
+										<input type="submit" value="Check Availabity">
+									</form>
+								</div>
 							</div>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
-		</div>
-
+		</div>		
 <!-- begin footer -->
 		<div class="footer-section">
 			<div class="container">
@@ -265,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>All rights reserved></p>
+						<p>All rights reserved - DoubleV</p>
 					</div>
 					<div class="social-icons">
 						<a href="#"><i class="icon"></i></a>
@@ -278,5 +223,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--footer-->
 
 <!-- end footer -->
+
 </body>
 </html>

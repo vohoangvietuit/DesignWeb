@@ -21,9 +21,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/javascript.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
-<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
-<!---strat-date-piker---->
+<!-- <link href='//fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'> -->
+<!---strat-date-piker-->
 <!-- requried-jsfiles-for owl -->
 							<link href="css/owl.carousel.css" rel="stylesheet">
 							    <script src="js/owl.carousel.js"></script>
@@ -62,7 +62,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					<li>
 						<div class="slider-info">
-							<img src="images/b5.jpg" class="img-responsive" alt="">
+								<img src="images/b5.jpg" class="img-responsive" alt="">
+						</div>
+
+						<div class="container">
+							<div class="banner-text">
+								<h3>Comfortable & Convenience</h3>
+							</div>
 						</div>
 					</li>
 
@@ -70,11 +76,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="slider-info">
 							<img src="images/b0.jpg" class="img-responsive" alt="">
 						</div>
+
+						<div class="container">
+							<div class="banner-text">
+								<h3>Modern & Luxurious</h3>
+							</div>
+						</div>
 					</li>	
 
 					<li>
 						<div class="slider-info">
 							<img src="images/b8.jpg" class="img-responsive" alt="">
+						</div>
+
+						<div class="container">
+							<div class="banner-text">
+								<a href="index.html#book">
+								<h3>Click here to reservation</h3>
+								</a>
+							</div>
 						</div>
 					</li>					
 
@@ -121,11 +141,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <ul class="nav navbar-nav">
 							<li class="active"><a href="index.html" data-hover="Home">Home </a></li>
 							<li><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
-							<li><a data-hover="Restaurant" href="restaurant.html">Restaurant</a></li>
+							<li><a data-hover="Services" href="service.html">Services</a></li>
 							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
 							<li><a data-hover="About" href="about.html">About</a></li>
 							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							<li><a data-hover="Location" href="location.html">Location</a></li>
+							<li><a data-hover="Location" href="index.html#location">Location</a></li>
 							 
 						  </ul>
 						</div><!-- /.navbar-collapse -->
@@ -140,11 +160,68 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- begin content -->
 		<div class="content">
 			
-			<div class="welcome">
-				<div class="container">
-					<h2 class="tittle">Welcome To Hotel</h2>
+			<div class="welcome ">
+				<h1 class="tittle">Welcome To New World Hotel</h1>
+				<div class="col-md-8 rest-grid">
+						<img src="images/b5.jpg" alt="anhbia" class="imgbia">
 						<p class="wel text">New World Saigon Hotel is conveniently located in the city center, opposite the verdant 23 September Park and the famous Ben Thanh Market. Featuring 533 elegantly decorated guestrooms and a wide variety of recreation and business services, the hotel combines convenience and relaxation. The hotel features three excellent restaurants that invite discerning guests to savor exquisitely prepared Chinese and Japanese cuisine, as well as international delicacies. Located close to the Tan Son Nhat International Airport, the hotel also offers an extensive range of business and leisure facilities including a Spa, Fitness Center, Business Center and meeting and event space.</p>
-					<div class="wel-grids">
+						<div class="clearfix"></div>
+				</div>
+
+				<div class="col-md-4 rest-grid1">
+					<div class="book" id="book">
+							<h4 class="reser">Make a Reservation</h4>
+							<div class="reser-grid1">
+								<h5>Check in</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Check out</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Adults:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Kids:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Room:</h5>
+								<select class="sel1">
+									<option value="">All</option>
+									<option value="">Family Room</option>
+									<option value="">Standard Room</option>
+									<option value="">Deluxe Room</option>
+									<option value="">Luxury Room</option>
+									<option value="">Single Room</option>
+								</select>
+								<div class="best-hot">
+									<form action="#" method="post">
+										<input type="submit" value="Check Availabity">
+									</form>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+			</div>
+
+			<div class="container">
+									<div class="wel-grids">
 						<div class="col-md-3 wel-grid">
 							<img src="images/room/g3.jpg" class="img-responsive gray" alt=""/>
 							<h4>Guest Room</h4>
@@ -167,7 +244,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="clearfix"></div>
 					</div>
-				</div>
 			</div>
 			
 			<div class="resort-section">
@@ -183,11 +259,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 cap">
 									<h4>Surrounded By Custom Designed</h4>	
 									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
+										<li><i class="glyphicon glyphicon-map-marker"></i>76 Le Lai Street, District 1, HO CHI MINH CITY</li>
+										<li><i class="glyphicon glyphicon-plane"></i> Tan Son Nhat Airlines</li>
 										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
 									</ul>										
-									<p>Duis at ante nec neque rhoncus pretium. Ut placerat euismod nibh industry's stand orci donec mollis, est non scelerisque blandit, velit nunc laoreet dol scrambled it to augue non elit aliquam in vehicula sem phasellu  consectetur adipiscing elit donec porttitor lectus at neque sollicitudin.</p>
+									<p>The elegantly appointed guestrooms at New World Saigon Hotel are offered in three categories: Superior Rooms located on levels two to six; Deluxe Rooms on level seven and eight; and Premier Rooms on level nine. Guestrooms are styled with modern décor and equipped with a full range of amenities. Featuring marble bathrooms and large work desk, all guestrooms feature either park or street views.</p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -216,11 +292,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 cap">
 									<h4>Free High Speed Wi-Fi Internet in Room</h4>
 									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
+										<li><i class="glyphicon glyphicon-map-marker"></i>76 Le Lai Street, District 1, HO CHI MINH CITY</li>
+										<li><i class="glyphicon glyphicon-plane"></i> Tan Son Nhat Airlines</li>
 										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
 									</ul>		
-									<p>Duis at ante nec neque rhoncus pretium. Ut placerat euismod nibh industry's stand orci donec mollis, est non scelerisque blandit, velit nunc laoreet dol scrambled it to augue non elit aliquam in vehicula sem phasellu  consectetur adipiscing elit donec porttitor lectus at neque sollicitudin.</p>
+									<p>New World Saigon Hotel offers 25 One-Bedroom Suites at 69.5 square meters, two Director’s Suites at 91 square meters and one Presidential Suite at 181 square meters. With impressive views of the stunning city skyline, the spacious, Suites are provided with luxurious Elemis toiletries.  Director’s Suites and the Presidential Suite also contain a fully equipped kitchenette.</p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -249,11 +325,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 cap">
 									<h4>Surrounded By Custom Designed</h4>	
 									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i> 33 Street Name, City Name United States</li>
-										<li><i class="glyphicon glyphicon-plane"></i> US Airlines</li>
+										<li><i class="glyphicon glyphicon-map-marker"></i>76 Le Lai Street, District 1, HO CHI MINH CITY</li>
+										<li><i class="glyphicon glyphicon-plane"></i> Tan Son Nhat Airlines</li>
 										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
 									</ul>										
-									<p>Duis at ante nec neque rhoncus pretium. Ut placerat euismod nibh industry's stand orci donec mollis, est non scelerisque blandit, velit nunc laoreet dol scrambled it to augue non elit aliquam in vehicula sem phasellu  consectetur adipiscing elit donec porttitor lectus at neque sollicitudin.</p>
+									<p>Located from level 10 to 14, the 30-square-meter Residence Club Deluxe Rooms present premium accommodation, with marble bathroom and a large work desk. With exclusive access to the Residence Club Living Room, guests can enjoy a wide range of exclusive privileges and benefits. </p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -281,31 +357,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="superlist">
 				<div class="container">
-					<h3 class="tittle">Hand Picked by Superlist</h3>
-					<p class="wel text">Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
-					<div class="super-grids">
-						<div class="col-md-8 super-grid">
-							<div class="super-top">
-							<img src="images/s1.jpg" class="img-responsive gray" alt=""/>
-							</div>
-							<div class="super-bottom">
-								<div class="col-md-6 super-left">
-								<img src="images/s2.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="col-md-6 super-right">
-								<img src="images/s3.jpg" class="img-responsive gray" alt=""/>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-						<div class="col-md-4 super-grid1">
-							<div class="super-top">
-								<img src="images/s4.jpg" class="img-responsive gray" alt=""/>
-									<h4>Luxury Suite</h4>
-									<p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. Phasellus accumsan urna vitae molestie interdum. Nam sed placerat libero, non eleifend dolor.</p>
-							</div>
-						</div>
-							<div class="clearfix"></div>
+					<h3 class="tittle">New World Hotel Location</h3>
+					<p class="wel text1">76 Le Lai Street, District 1, Ho Chi Minh City, Vietnam
+								Tel: +84 8 3822 8888 <br>Fax: +84 8 3823 0710</p>
+					<div class="location" id="location">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15678.108375380214!2d106.6947847!3d10.7708829!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ab6e5fe92c2e5d7!2sNew+World+Saigon+Hotel!5e0!3m2!1svi!2s!4v1477566574264" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
@@ -317,7 +373,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container">
 				<div class="footer-grids">
 					<div class="col-md-3 footer-grid">
-						<h4>Get In Touch</h4>
+						<h4>Contact</h4>
 						<ul>
 							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
@@ -337,10 +393,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="col-md-3 footer-grid">
 						<h4>Our Rooms</h4>
 						<ul>
-							<li>Superior Room</li>
-							<li>Deluxe Room</li>
-							<li>Business Room</li>
-							<li>Executive Corner Room</li>
+							<li>Guest Room</li>
+							<li>Residence Club Room</li>
+							<li>Suite</li>
+							<li>Residence Club</li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
@@ -360,7 +416,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>All rights reserved></p>
+						<p>All rights reserved - DoubleV</p>
 					</div>
 					<div class="social-icons">
 						<a href="#"><i class="icon"></i></a>
