@@ -1,7 +1,26 @@
 *{
-    
 }
 
+.edit4 {
+    background: rgba(0, 173, 138, 0.06);
+    margin-top: -20px;
+    height: 35em;
+}
+
+.edit3 {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.edit1 {
+    height: 28em;
+    background: rgba(0, 173, 138, 0.06);
+    margin-top: 30em;
+}
+h3.tittle.ol1 {
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
 p.mem {
     font-weight: bold;
     font-size: 20px;
@@ -79,11 +98,11 @@ h2.tittle {
     /* width: 71px; */
 }
 
-h4.reser {margin: -5px 0px 16px 61px;color: #46a0ef;}
+h4.reser {margin: -15px 0px 16px 61px;color: #46a0ef;}
 
 .book {
     padding: 11px;
-    margin-top: 40px;
+    margin-top: 28px;
     margin-bottom: 36px;
     margin-left: 29px;
     margin-right: 28px;
@@ -269,7 +288,7 @@ div#bs-example-navbar-collapse-1 {
     padding: 2em 0;
     width: 7%;
     text-align: center;
-    margin: 0 auto;
+    margin-left: 38px;
 }
 .banner-text h3 {
     font-size: 3em;
@@ -305,7 +324,7 @@ p.wel.text1 {
 .wel-grid p {
     font-size: 1em;
     line-height: 1.8em;
-    text-align: center;
+    text-align: justify;
 }
 .wel-grid img {
     box-shadow: 0 0 8px #999;
@@ -315,6 +334,11 @@ h3.tittle {
     font-size: 3em;
     text-align: center;
     color: #46a0ef;
+}
+
+h3.tittle.ol2 {
+    margin-top: 32px;
+    margin-bottom: 26px;
 }
 .cap h4 {
     font-size: 1.8em;
@@ -715,7 +739,7 @@ h3.tittle1{
 .book_date1 {
     padding: 6px 8px;
     border: 1px solid #46a0ef;
-  margin-bottom: 0.8em;
+    margin-bottom: 8px;
 }
 .best-hot1 input[type="text"] {
     border: 1px solid #46a0ef;
@@ -904,7 +928,7 @@ h3.tittle1{
 .best-hot input[type="submit"] {
     width: 100%;
     padding: 0.5em;
-    margin-top: 1.5em;
+    margin-top: 9px;
     background: #46a0ef;
     outline: none;
     border: none;
