@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Rooms - New World Hotel</title>
+<link rel="icon" href="images/icon_hotel.ico" type="image/x-icon">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -18,6 +19,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
 <!---->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <!-- requried-jsfiles-for owl -->
@@ -32,6 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							        navigation : false,
 							        navigationText :  false,
 							        pagination : true,
+							        stopOnHover : true,
 							      });
 							    });
 							    </script>
@@ -77,6 +80,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- FlexSlider -->
 	</div>
 
+<!-- menu -->
 	<div class="header">
 		<div class="container">
 			<div class="header-menu">
@@ -97,14 +101,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
-							<li><a href="index.html" data-hover="Home">Home </a></li>
-							<li  class="active"><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
-							<li><a data-hover="Services" href="service.html">Services</a></li>
-							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
-							<li><a data-hover="About" href="about.html">About</a></li>
-							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							<li><a data-hover="Location" href="location.html">Location</a></li>
-							 
+							<li><a href="index.html" data-hover="Home">Trang chủ </a></li>
+							<li class="active"><a data-hover="Rooms" href="rooms.html">Phòng</a></li>
+							<li><a data-hover="Services" href="service.html">Dịch Vụ</a></li>
+							<li><a data-hover="Gallery" href="gallery.html">Ảnh</a></li>
+							<li><a data-hover="About" href="about.html">Thông tin</a></li>
+							<li><a data-hover="Contact" href="contact.html">Liên hệ</a></li>
+							<li><a data-hover="Location" href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7708829,106.6947847,15z/data=!4m2!3m1!1s0x0:0x2ab6e5fe92c2e5d7?sa=X&ved=0ahUKEwjmuNauo6XQAhXMJZQKHYY8DkUQ_BIIrwEwDg">Vị trí</a></li>
+							<li><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Đặt phòng ngay</button></li>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -113,6 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 		</div> 
 	</div>
+<!-- //menu -->
 <!-- end header	 -->	
 
 		<div class="content">
@@ -127,37 +132,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<img src="images/room/g3.jpg" class="img-responsive gray" alt=""/>
 								<h4>Guest Room</h4>
 							</a>
-							<p class="info-room">New World Saigon Hotel offers three guestroom types: Superior Rooms, Deluxe Rooms and Premier Rooms, all situated from level two to level nine. With impressive park and street views, guestrooms are well equipped with all the requisite amenities for a most comfortable stay.</p>
+							<p class="info-room">Khách sạn New World Sài Gòn cung cấp ba loại phòng: phòng Superior, phòng Deluxe và phòng Premier, tất cả nằm từ tầng hai tới tầng chín. Nhìn ra công viên và đường phố, các phòng đều được trang bị với tất cả các tiện nghi cần thiết cho một kỳ nghỉ thoải mái nhất.</p>
 						</div>
 						<div class="col-md-3 wel-grid">
 							<a href="room2.html" class="tt1">
 								<img src="images/room/r1.jpg" class="img-responsive gray" alt=""/>
 								<h4>Residence Club Room</h4>
 							</a>
-							<p class="info-room">Elegantly situated on the Residence Club Floor from level 10 to 14, Residence Club Rooms offer striking views of the city with deluxe in-room amenities. With exclusive access to the Residence Club, guests can enjoy many private club benefits and privileges.</p>
+							<p class="info-room">Nằm trên Residence Club Floor từ tầng 10 đến 14, phòng Residence Club cung cấp tầm nhìn ra thành phố với tiện nghi chất lượng cao trong phòng. Với đặc quyền dành riêng cho Residence Club, khách có thể tận hưởng nhiều lợi ích câu lạc bộ tư nhân và các đặc quyền.</p>
 						</div>
 						<div class="col-md-3 wel-grid">
 							<a href="room3.html" class="tt1">
 								<img src="images/room/s1.jpg" class="img-responsive gray" alt=""/>
 								<h4>Suite</h4>
 							</a>
-							<p class="info-room">Beautifully decorated suites at New World Saigon Hotel are offered in three categories: One-Bedroom Suite, Director’s Suite and Presidential Suite. Guests staying in the hotel’s suites can enjoy added privacy at the Residence Club with an extensive range of exclusive privileges and benefits.</p>
+							<p class="info-room">Dãy phòng được trang trí đẹp tại khách sạn New World Sài Gòn cung cấp ba loại phòng: One-Bedroom Suite, Director’s Suite and Presidential Suite. Du khách ở trong dãy phòng của khách sạn có thể tận hưởng sự riêng tư như Residence Club với một loạt các đặc quyền và lợi ích độc quyền.</p>
 						</div>
 						<div class="col-md-3 wel-grid">
 							<a href="room4.html" class="tt1">
 								<img src="images/room/c1.jpg" class="img-responsive gray" alt=""/>
 								<h4>Residence Club</h4>
 							</a>
-							<p class="info-room">Guests staying on Residence Club floors and in suites can enjoy exclusive access to the Residence Club Living Room – a comfortable and welcoming private space offering exclusive benefits and privileges.</p>
+							<p class="info-room">Du khách ở trên tầng Residence Club và trong dãy phòng có thể thưởng thức truy cập độc quyền cho các Phòng khách Residence Club - một không gian riêng tư thoải mái và chào đón cung cấp những lợi ích độc quyền và đặc quyền.</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</div>
 			<!-- end room -->
-			<div class="reservation">
+<!-- 			<div class="reservation">
 				<div class="container">
-					<h3 class="tittle">Make reservation</h3>
+					<h3 class="tittle">Đặt phòng</h3>
 					<div class="reservation-grids">
 						<div class="col-md-4 reser-grid">
 							<h5>Check in</h5>
@@ -214,13 +219,92 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="clearfix"></div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
+<!-- datphong -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Đặt Phòng Ngay</h3>
+      </div>
+      <div class="modal-body">
+        					<div>
+							<div class="reser-grid1">
+								<h5>Ngày đến</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Ngày đi</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Người lớn:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Trẻ em:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Phòng:</h5>
+								<select class="sel1">
+									<option value="">All</option>
+									<option value="">Family Room</option>
+									<option value="">Standard Room</option>
+									<option value="">Deluxe Room</option>
+									<option value="">Luxury Room</option>
+									<option value="">Single Room</option>
+								</select>
+								<div class="best-hot">
+									<form action="#" method="post">
+										<input type="submit" value="Kiểm tra phòng trống">
+									</form>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+					</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+
+  </div>
+</div>	
+<!-- hetdatphong -->
 <!-- begin footer -->
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
+					<div class="col-md-3 footer-grid" id="morong">
+						<h4>Site map</h4>
+						<ul>
+							<li><a href="index.html">Trang chủ</a></li>							
+							<li><a href="rooms.html">Phòng</a></li>							
+							<li><a href="service.html">Dịch Vụ</a></li>							
+							<li><a href="gallery.html">Ảnh</a></li>							
+							<li><a href="about.html">Thông Tin</a></li>							
+							<li><a href="contact.html">Liên Hệ</a></li>							
+							<li><a href="location.html">Vị Trí</a></li>							
+						</ul>
+					</div>
 					<div class="col-md-3 footer-grid">
 						<h4>Contact</h4>
 						<ul>
@@ -228,15 +312,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
 							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <a href="#"><a href="mailto:info@example.com">info@example.com</a></a></li>
 							<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-						</ul>
-					</div>
-					<div class="col-md-3 footer-grid">
-						<h4>Hotel top links</h4>
-						<ul>
-							<li>Our Story</li>
-							<li>Sleep Program</li>
-							<li>Executive Travel Program</li>
-							<li>Enriched Wellness</li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
@@ -265,7 +340,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>All rights reserved></p>
+						<p>All rights reserved - DoubleV</p>
 					</div>
 					<div class="social-icons">
 						<a href="#"><i class="icon"></i></a>
@@ -278,5 +353,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--footer-->
 
 <!-- end footer -->
+<!-- totop -->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+<!-- //totop -->
 </body>
 </html>

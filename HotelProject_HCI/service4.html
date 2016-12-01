@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Services - Wedding</title>
+<link rel="icon" href="images/icon_hotel.ico" type="image/x-icon">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
@@ -41,12 +42,81 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 <body>
+<!-- datphong -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Đặt Phòng Ngay</h3>
+      </div>
+      <div class="modal-body">
+        					<div>
+							<div class="reser-grid1">
+								<h5>Ngày đến</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Ngày đi</h5>
+								<div class="book_date1">							
+									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+								</div>
+								<h5>Người lớn:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Trẻ em:</h5>
+								<div class="best-hot1">
+									<select class="sel">
+										<option value="">0</option>
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3 or 3+</option>
+									</select>
+								</div>
+								<h5>Phòng:</h5>
+								<select class="sel1">
+									<option value="">All</option>
+									<option value="">Family Room</option>
+									<option value="">Standard Room</option>
+									<option value="">Deluxe Room</option>
+									<option value="">Luxury Room</option>
+									<option value="">Single Room</option>
+								</select>
+								<div class="best-hot">
+									<form action="#" method="post">
+										<input type="submit" value="Kiểm tra phòng trống">
+									</form>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+					</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+
+  </div>
+</div>	
+<!-- hetdatphong -->
 <!-- begin header -->
 	<div class="banner">
 		
 	</div>
 
-	<div class="header">
+<!-- menu -->
+	<div class="header head_nav">
 		<div class="container">
 			<div class="header-menu">
 				<nav class="navbar navbar-default">
@@ -66,14 +136,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
-							<li><a href="index.html" data-hover="Home">Home </a></li>
-							<li class="active"><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
-							<li><a data-hover="Services" href="service.html">Services</a></li>
-							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
-							<li><a data-hover="About" href="about.html">About</a></li>
-							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							<li><a data-hover="Location" href="index.html#location">Location</a></li>
-							 
+							<li><a href="index.html" data-hover="Home">Trang chủ </a></li>
+							<li><a data-hover="Rooms" href="rooms.html">Phòng</a></li>
+							<li class="active"><a data-hover="Services" href="service.html">Dịch Vụ</a></li>
+							<li><a data-hover="Gallery" href="gallery.html">Ảnh</a></li>
+							<li><a data-hover="About" href="about.html">Thông tin</a></li>
+							<li><a data-hover="Contact" href="contact.html">Liên hệ</a></li>
+							<li><a data-hover="Location" href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7708829,106.6947847,15z/data=!4m2!3m1!1s0x0:0x2ab6e5fe92c2e5d7?sa=X&ved=0ahUKEwjmuNauo6XQAhXMJZQKHYY8DkUQ_BIIrwEwDg">Vị trí</a></li>
+							<li><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Đặt phòng ngay</button></li>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -82,6 +152,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 		</div> 
 	</div>
+<!-- //menu -->
 <!-- end header	 -->		
 
 			
@@ -107,19 +178,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</div>
 						</div>
 						<div class="col-md-4 rest-grid1">
-							<h3>Make a Reservation</h3>
+							<h3>Đặt phòng</h3>
 							<div class="reser-grid1">
-								<h5>Check in</h5>
+								<h5>Ngày đến</h5>
 								<div class="book_date1">							
 									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
 									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
 								</div>
-								<h5>Check out</h5>
+								<h5>Ngày đi</h5>
 								<div class="book_date1">							
 									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
 									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
 								</div>
-								<h5>Adults:</h5>
+								<h5>Người lớn:</h5>
 								<div class="best-hot1">
 									<select class="sel">
 										<option value="">0</option>
@@ -128,7 +199,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<option value="">3 or 3+</option>
 									</select>
 								</div>
-								<h5>Kids:</h5>
+								<h5>Trẻ em:</h5>
 								<div class="best-hot1">
 									<select class="sel">
 										<option value="">0</option>
@@ -137,7 +208,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<option value="">3 or 3+</option>
 									</select>
 								</div>
-								<h5>Room:</h5>
+								<h5>Phòng:</h5>
 								<select class="sel1">
 									<option value="">All</option>
 									<option value="">Family Room</option>
@@ -148,7 +219,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</select>
 								<div class="best-hot">
 									<form action="#" method="post">
-										<input type="submit" value="Check Availabity">
+										<input type="submit" value="Kiểm tra phòng trống">
 									</form>
 								</div>
 							</div>
@@ -162,6 +233,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
+					<div class="col-md-3 footer-grid" id="morong">
+						<h4>Site map</h4>
+						<ul>
+							<li><a href="index.html">Trang chủ</a></li>							
+							<li><a href="rooms.html">Phòng</a></li>							
+							<li><a href="service.html">Dịch Vụ</a></li>							
+							<li><a href="gallery.html">Ảnh</a></li>							
+							<li><a href="about.html">Thông Tin</a></li>							
+							<li><a href="contact.html">Liên Hệ</a></li>							
+							<li><a href="location.html">Vị Trí</a></li>							
+						</ul>
+					</div>
 					<div class="col-md-3 footer-grid">
 						<h4>Contact</h4>
 						<ul>
@@ -169,15 +252,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
 							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <a href="#"><a href="mailto:info@example.com">info@example.com</a></a></li>
 							<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-						</ul>
-					</div>
-					<div class="col-md-3 footer-grid">
-						<h4>Hotel top links</h4>
-						<ul>
-							<li>Our Story</li>
-							<li>Sleep Program</li>
-							<li>Executive Travel Program</li>
-							<li>Enriched Wellness</li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
@@ -219,6 +293,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--footer-->
 
 <!-- end footer -->
+<!-- totop -->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+
+<!-- //totop -->
 
 </body>
 </html>

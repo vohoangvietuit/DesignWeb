@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>New World Hotel</title>
+<title>Khách sạn New World</title>
+<link rel="icon" href="images/icon_hotel.ico" type="image/x-icon">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- icon style -->
+<!-- <link href="css/glyphicons.css" rel="stylesheet"> -->
+<!-- //icon style -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <link href="css/font-awesome.css" rel="stylesheet">
@@ -36,10 +40,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							        navigation : false,
 							        navigationText :  false,
 							        pagination : true,
+							        stopOnHover : true,
 							      });
 							    });
 							    </script>
 							 <!-- //requried-jsfiles-for owl -->
+	<!-- codinh -->
+<!-- 	<script type="text/javascript">
+        jQuery(document).ready(function($) {
+            var $filter = $('.head_nav');
+            var $filterSpacer = $('<div />', {
+                "class": "vnkings-spacer",
+                "height": $filter.outerHeight()
+            });
+            if ($filter.size())
+            {
+                $(window).scroll(function ()
+                {
+                    if (!$filter.hasClass('fix') && $(window).scrollTop() > $filter.offset().top)
+                    {
+                        $filter.before($filterSpacer);
+                        $filter.addClass("fix");
+                    }
+                    else if ($filter.hasClass('fix')  && $(window).scrollTop() < $filterSpacer.offset().top || $(window).scrollTop() < 100)
+                    {
+                        $filter.removeClass("fix");
+                        $filterSpacer.remove();
+                    }
+                });
+            }
+ 
+        });
+    </script> -->
+	<!-- //codinh -->
+				<!-- FlexSlider -->
+			<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(function(){
+						SyntaxHighlighter.all();
+					});
+					$(window).load(function(){
+					$('.flexslider').flexslider({
+					animation: "slide",
+					slideshow: true,
+					pauseOnHover: true,
+					slideshowSpeed: 3000,
+		 
+					start: function(slider){
+					  $('body').removeClass('loading');
+					}
+					});
+					});
+				</script>
+			<!-- FlexSlider -->
 
 </head>
 <body>
@@ -55,22 +108,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						<div class="container">
 							<div class="banner-text">
-								<h3>Welcome to New World Hotel</h3>
+								<h3>Chào mừng đến với Khách Sạn New World</h3>
 							</div>
 						</div>
 					</li>
 
 					<li>
 						<div class="slider-info">
-								<img src="images/b5.jpg" class="img-responsive" alt="">
+								<img src="images/president/3pre.jpg" class="img-responsive" alt="">
 						</div>
 
 						<div class="container">
 							<div class="banner-text">
-								<h3>Comfortable & Convenience</h3>
+								<h3>Khách sạn duy nhất ở Việt Nam từng đón tiếp 3 vị Tổng Thống Mỹ</h3>
+							</div>
+							<label class="pre1"><span class="preview4">George H. W. Bush</span></label>
+							<label class="pre2"><span class="preview3">Bill Clinton</span></label>
+							<label class="pre3""><span class="preview5">George W. Bush</span></label>
+						</div>
+
+					</li>
+
+					<li>
+						<div class="slider-info">
+							<img src="images/roomb.jpg" class="img-responsive" alt="">
+						</div>
+
+						<div class="container">
+							<div class="banner-text">
+								<h3>Phòng ốc hiện đại với đầy đủ tiện nghi</h3>
 							</div>
 						</div>
-					</li>
+					</li>	
 
 					<li>
 						<div class="slider-info">
@@ -79,21 +148,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						<div class="container">
 							<div class="banner-text">
-								<h3>Modern & Luxurious</h3>
+								<h3>Tầm nhìn ra công viên & Không gian thoáng đãng</h3>
 							</div>
 						</div>
 					</li>	
 
 					<li>
 						<div class="slider-info">
-							<img src="images/b8.jpg" class="img-responsive" alt="">
+							<img src="images/b11.jpg" class="img-responsive" alt="">
 						</div>
 
 						<div class="container">
 							<div class="banner-text">
-								<a href="index.html#book">
-								<h3>Click here to reservation</h3>
-								</a>
+								<h3>Sang Trọng & Đẳng Cấp</h3>
 							</div>
 						</div>
 					</li>					
@@ -101,25 +168,59 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</ul>
 			</div>
 		</section>
-			<!-- FlexSlider -->
-			<script defer src="js/jquery.flexslider.js"></script>
-				<script type="text/javascript">
-					$(function(){
-						SyntaxHighlighter.all();
-					});
-					$(window).load(function(){
-					$('.flexslider').flexslider({
-					animation: "slide",
-					start: function(slider){
-					  $('body').removeClass('loading');
-					}
-					});
-					});
-				</script>
-			<!-- FlexSlider -->
-	</div>
 
-	<div class="header">
+	</div>
+	<!-- tongthongcontent -->
+						<div class="bushcha hidden">
+							<img class="resizeb" src="images/president/bushcha1.jpg" alt="">
+							<p>Lần thứ nhất là Tổng thống George H W Bush (thường gọi Bush cha) đến thăm VN không chính thức VN vào năm 1995.</p>
+						</div>
+												<script>
+							$(".preview4").hover(function(){
+    $('.bushcha').removeClass('hidden');
+},function(){
+    $('.bushcha').addClass('hidden');
+});
+						</script>							
+
+						<div class="bushcon hidden">
+							<img class="resizeb" src="images/president/5.jpg" alt="">
+							<p>Lần thứ ba là Tổng thống George W Bush (thường gọi là Bush con) đến vào năm 2006.</p>
+						</div>
+												<script>
+							$(".preview5").hover(function(){
+    $('.bushcon').removeClass('hidden');
+},function(){
+    $('.bushcon').addClass('hidden');
+});
+						</script>							
+
+						<div class="bill hidden">
+							<img class="resizeb" src="images/president/2.jpg" alt="">
+							<p> Tháng 11/2000, Tổng thống Mỹ Bill Clinton có chuyến thăm chính thức Việt Nam lần đầu tiên kể từ khi chiến tranh kết thúc, mở ra một chương mới trong quan hệ hai nước.</p>
+						</div>						
+
+						<div class="bill1 hidden">
+							<img class="resizeb" src="images/president/4.jpg" alt="">
+							<p>Đệ nhất phu nhân Mỹ Hillary Clinton (trái) và con gái Chelsea đội nón lá khi đến thăm dự án Quỹ tình thương của Hội Liên hiệp phụ nữ Việt Nam và Oxfam tại thôn Yên Tàng, xã Bắc Phú, huyện Sóc Sơn, Hà Nội ngày 17/11. </p>
+						</div>
+												<script>
+							$(".preview3").hover(function(){
+    $('.bill').removeClass('hidden');
+},function(){
+    $('.bill').addClass('hidden');
+});
+						</script>								
+											<script>
+							$(".preview3").hover(function(){
+    $('.bill1').removeClass('hidden');
+},function(){
+    $('.bill1').addClass('hidden');
+});
+						</script>	
+	<!-- //tongthongcontent -->
+<!-- menu -->
+	<div class="header head_nav">
 		<div class="container">
 			<div class="header-menu">
 				<nav class="navbar navbar-default">
@@ -139,14 +240,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 						  <ul class="nav navbar-nav">
-							<li class="active"><a href="index.html" data-hover="Home">Home </a></li>
-							<li><a data-hover="Rooms" href="rooms.html">Rooms</a></li>
-							<li><a data-hover="Services" href="service.html">Services</a></li>
-							<li><a data-hover="Gallery" href="gallery.html">Gallery</a></li>
-							<li><a data-hover="About" href="about.html">About</a></li>
-							<li><a data-hover="Contact" href="contact.html">Contact</a></li>
-							<li><a data-hover="Location" href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7708829,106.6947847,15z/data=!4m2!3m1!1s0x0:0x2ab6e5fe92c2e5d7?sa=X&ved=0ahUKEwjmuNauo6XQAhXMJZQKHYY8DkUQ_BIIrwEwDg">Location</a></li>
-							 
+							<li class="active"><a href="index.html" data-hover="Home">Trang chủ </a></li>
+							<li><a data-hover="Rooms" href="rooms.html">Phòng</a></li>
+							<li><a data-hover="Services" href="service.html">Dịch Vụ</a></li>
+							<li><a data-hover="Gallery" href="gallery.html">Ảnh</a></li>
+							<li><a data-hover="About" href="about.html">Thông tin</a></li>
+							<li><a data-hover="Contact" href="contact.html">Liên hệ</a></li>
+							<li><a data-hover="Location" href="https://www.google.com/maps/place/New+World+Saigon+Hotel/@10.7708829,106.6947847,15z/data=!4m2!3m1!1s0x0:0x2ab6e5fe92c2e5d7?sa=X&ved=0ahUKEwjmuNauo6XQAhXMJZQKHYY8DkUQ_BIIrwEwDg">Vị trí</a></li>
+							<li><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Đặt phòng ngay</button></li>
 						  </ul>
 						</div><!-- /.navbar-collapse -->
 					</div><!-- /.container-fluid -->
@@ -155,34 +256,89 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>	
 		</div> 
 	</div>
+<!-- //menu -->
 <!-- end header	 -->		
 
 <!-- begin content -->
 		<div class="content">
 			
 			<div class="welcome ">
-				<h1 class="tittle">Welcome To New World Hotel</h1>
-				<div class="col-md-8 rest-grid">
+				<h1 class="tittle">Khách Sạn New World</h1>
+				<div class="col-md-12 rest-grid">
 						<img src="images/b5.jpg" alt="anhbia" class="imgbia">
-						<p class="wel text">New World Saigon Hotel is conveniently located in the city center, opposite the verdant 23 September Park and the famous Ben Thanh Market. Featuring 533 elegantly decorated guestrooms and a wide variety of recreation and business services, the hotel combines convenience and relaxation. The hotel features three excellent restaurants that invite discerning guests to savor exquisitely prepared Chinese and Japanese cuisine, as well as international delicacies. Located close to the Tan Son Nhat International Airport, the hotel also offers an extensive range of business and leisure facilities including a Spa, Fitness Center, Business Center and meeting and event space.</p>
+						<p class="wel text">Khách sạn New World Saigon có tổng diện tích mặt bằng 12.192m2, tổng diện tích xây dựng 55.760m2, số tầng là 14 và chiều cao 60m. Quy mô 560 phòng khách các loại, 3 nhà hàng lớn, 3 phòng hội nghị – yến tiệc cùng đầy đủ các dịch vụ hỗ trợ một cách hoàn hảo để phục vụ khách lưu trú. Là KS thuộc Công ty Liên doanh khách sạn Saigon Inn, tọa lạc tại một vị trí thuận lợi ở trung tâm TPHCM, KS New World Sài Gòn thường được các thương gia, khách du lịch quốc tế chọn làm nơi lưu trú. KS có phòng Presidential Suite hay còn gọi là phòng dành cho tổng thống với diện tích 181 mét vuông, bao gồm 2 phòng ngủ cao cấp, phòng khách, phòng làm việc, hai phòng tắm lớn,… tất cả đều được bài trí các loại trang thiết bị tiện nghi sang trọng bậc nhất dành cho các nguyên thủ quốc gia.</p>
 						<div class="clearfix"></div>
+											<div class="list no1">
+												<h5>Nổi bậc:</h5>
+												<ul>
+													<li><span class="preview1"><i class="glyphicon glyphicon-plane"></i>Gần sân bay</span></li>
+													<li><span class="preview2"><i class="glyphicon glyphicon-shopping-cart"></i>Gần các khu mua sắm</span></li>	
+													<li><span class="preview3"><i class="glyphicon glyphicon-tree-deciduous"></i>Tầm nhìn đẹp</span></li>		   <li><a href="index.html#them"><i class="	glyphicon glyphicon-option-horizontal"></i>Thêm</a></li>								
+
+												</ul>
+											</div>
+						<div class="sanbay hidden">
+							<img class="auto" src="images/sanbay.jpg" alt="">
+							<p>Cách 20 phút từ sân bay và ngay trung tâm doanh nghiệp và thương mại, không có vị trí nào tốt hơn ở tại TP.HCM. </p>
+						</div>						
+						<div class="cho hidden">
+							<img class="auto" src="images/cho.jpg" alt="">
+							<p>Chỉ cần 5 phút, bạn có thể đi bộ tới chợ Bến thành và nhiều địa điểm vui chơi mua sắm.</p>
+						</div>						
+						<div class="congvien hidden">
+							<img class="auto" src="images/congvien.jpg" alt="">
+							<p>Từ phòng, ta có thể nhìn ra công viên Lê Lai. Với không khí sạch, thoáng mát của cây xanh</p>
+						</div>
+						<script>
+							$(".preview1").hover(function(){
+    $('.sanbay').removeClass('hidden');
+},function(){
+    $('.sanbay').addClass('hidden');
+});
+						</script>					
+							<script>
+							$(".preview2").hover(function(){
+    $('.cho').removeClass('hidden');
+},function(){
+    $('.cho').addClass('hidden');
+});
+						</script>								
+						<script>
+							$(".preview3").hover(function(){
+    $('.congvien').removeClass('hidden');
+},function(){
+    $('.congvien').addClass('hidden');
+});
+						</script>											
+
+						</script>
 				</div>
 
-				<div class="col-md-4 rest-grid1">
-					<div class="book" id="book">
-							<h4 class="reser">Make a Reservation</h4>
+<!-- datphong -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Đặt Phòng Ngay</h3>
+      </div>
+      <div class="modal-body">
+        					<div>
 							<div class="reser-grid1">
-								<h5>Check in</h5>
+								<h5>Ngày đến</h5>
 								<div class="book_date1">							
 									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
 									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
 								</div>
-								<h5>Check out</h5>
+								<h5>Ngày đi</h5>
 								<div class="book_date1">							
 									<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
 									<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
 								</div>
-								<h5>Adults:</h5>
+								<h5>Người lớn:</h5>
 								<div class="best-hot1">
 									<select class="sel">
 										<option value="">0</option>
@@ -191,7 +347,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<option value="">3 or 3+</option>
 									</select>
 								</div>
-								<h5>Kids:</h5>
+								<h5>Trẻ em:</h5>
 								<div class="best-hot1">
 									<select class="sel">
 										<option value="">0</option>
@@ -200,7 +356,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										<option value="">3 or 3+</option>
 									</select>
 								</div>
-								<h5>Room:</h5>
+								<h5>Phòng:</h5>
 								<select class="sel1">
 									<option value="">All</option>
 									<option value="">Family Room</option>
@@ -211,53 +367,62 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								</select>
 								<div class="best-hot">
 									<form action="#" method="post">
-										<input type="submit" value="Check Availabity">
+										<input type="submit" value="Kiểm tra phòng trống">
 									</form>
 								</div>
 							</div>
 							<div class="clearfix"></div>
 					</div>
-				</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div>
+    </div>
+
+  </div>
+</div>	
+<!-- hetdatphong -->
 			</div>
+<!-- rooms -->	
 				<div class="edit1">
 					<div class="container">
 					
-														<h3 class="tittle ol2">Rooms</h3>
+														<h3 class="tittle ol2">Các loại phòng</h3>
 						<div class="col-md-3 wel-grid edit2">
 							<a href="room1.html" class="tt1">
 							<img src="images/room/g3.jpg" class="img-responsive gray" alt=""/>
 							<h4>Guest Room</h4>
 							</a>
-							<p>Tastefully appointed, guestrooms combine relaxation and functionality</p>
+							<p>Trang bị đầy đủ, phòng khách kết hợp thư giãn và đầy đủ chức năng</p>
 						</div>
 						<div class="col-md-3 wel-grid">
 							<a href="room2.html" class="tt1">
 							<img src="images/room/r1.jpg" class="img-responsive gray" alt=""/>
 							<h4>Residence Club Room</h4>
 							</a>
-							<p>Situated on the Residence Club Floor, Residence Club Deluxe Rooms...</p>
+							<p>Ở trên tầng Residence Club, Phòng Residence Club Deluxe...</p>
 						</div>
 						<div class="col-md-3 wel-grid">
 							<a href="room3.html" class="tt1">
 							<img src="images/room/s1.jpg" class="img-responsive gray" alt=""/>
 							<h4>Suite</h4>
 							</a>
-							<p>With contemporary designs and comfortably furnished,...</p>
+							<p>Với thiết kế hiện đại và thoải mái trang bị, ...</p>
 						</div>
 						<div class="col-md-3 wel-grid">
 							<a href="room4.html" class="tt1">
 							<img src="images/room/c1.jpg" class="img-responsive gray" alt=""/>
 							<h4>Residence Club</h4>
 							</a>
-							<p>Creating a warm and relaxings ambience, the Residence Club...</p>
+							<p>Tạo ra một bầu không khí ấm áp và thư giãn, Residence Club ...</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
 			</div>
-			
+<!-- //rooms	 -->
 			<div class="edit3">
 				<div class="container">
-					<h3 class="tittle">Room <span>Detail</span></h3>
+					<h3 class="tittle">Giảm Giá Đặc Biệt </span></h3>
 					<div class="resort-grids">
 				<!-- start content_slider -->
 						<div id="owl-demo" class="owl-carousel">
@@ -268,11 +433,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 cap">
 									<h4>Single Room</h4>	
 									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i>76 Le Lai Street, District 1, HO CHI MINH CITY</li>
-										<li><i class="glyphicon glyphicon-plane"></i> Tan Son Nhat Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
+										<li><i class="glyphicon glyphicon-map-marker"></i>76 Đường Lê Lai, Quận 1, TP.HO CHI MINH</li>
+										<li><i class="glyphicon glyphicon-plane"></i> Gần Bay Tân Sơn Nhất</li>
+										<li><i class="glyphicon glyphicon-road"></i> Miễn Phí Đưa Đón</li>
 									</ul>										
-									<p>The elegantly appointed guestrooms at New World Saigon Hotel are offered in three categories: Superior Rooms located on levels two to six; Deluxe Rooms on level seven and eight; and Premier Rooms on level nine. Guestrooms are styled with modern décor and equipped with a full range of amenities. Featuring marble bathrooms and large work desk, all guestrooms feature either park or street views.</p>
+									<p>Các phòng nghỉ được trang trí thanh lịch tại khách sạn New World Sài Gòn được cung cấp trong ba loại: Phòng Superior nằm trên mức 2-6; Phòng Deluxe trên mức bảy và tám; và Premier Phòng vào mức độ chín. Phòng khách mang phong cách trang trí hiện đại và được trang bị đầy đủ các tiện nghi. Với phòng tắm bằng đá cẩm thạch và bàn làm việc lớn, tất cả phòng khách có tầm nhìn ra đường phố hoặc công viên.</p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -285,10 +450,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="col-md-3 deatils-right">
 											<div class="detail-top">
-												<span>PER NIGHT</span>
-												<h4>$45</h4>
+												<span>MỘT ĐÊM</span>
+												<strike><h5>$190</h5></strike>
+												<h4>$145</h4>
 											</div>
-										</div>
+										</div>		
 										<div class="clearfix"> </div>
 									</div>
 								</div>
@@ -301,11 +467,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 cap">
 									<h4>Deluxe Room</h4>
 									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i>76 Le Lai Street, District 1, HO CHI MINH CITY</li>
-										<li><i class="glyphicon glyphicon-plane"></i> Tan Son Nhat Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
+										<li><i class="glyphicon glyphicon-map-marker"></i>76 Đường Lê Lai, Quận 1, TP.HO CHI MINH</li>
+										<li><i class="glyphicon glyphicon-plane"></i> Gần Bay Tân Sơn Nhất</li>
+										<li><i class="glyphicon glyphicon-road"></i> Miễn Phí Đưa Đón</li>
 									</ul>		
-									<p>New World Saigon Hotel offers 25 One-Bedroom Suites at 69.5 square meters, two Director’s Suites at 91 square meters and one Presidential Suite at 181 square meters. With impressive views of the stunning city skyline, the spacious, Suites are provided with luxurious Elemis toiletries.  Director’s Suites and the Presidential Suite also contain a fully equipped kitchenette.</p>
+									<p>Khách sạn New World Sài Gòn có 25 Suites Một phòng ngủ tại 69,5 mét vuông, hai Suites Giám đốc của 91 mét vuông và một Presidential Suite 181 mét vuông. Với tầm nhìn ấn tượng những đường chân trời thành phố tuyệt đẹp, sự rộng rãi, Suites được cung cấp với đồ vệ sinh cá Elemis sang trọng. Suites Giám đốc và Presidential Suite cũng chứa một bếp nhỏ đầy đủ.</p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -319,8 +485,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="col-md-3 deatils-right">
 											<div class="detail-top">
-												<span>PER NIGHT</span>
-												<h4>$90</h4>
+												<span>MỖI ĐÊM</span>
+												<strike><h5>$230</h5></strike>
+												<h4>$190</h4>
 											</div>
 										</div>
 										<div class="clearfix"> </div>
@@ -335,11 +502,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="col-md-6 cap">
 									<h4>Luxury Room</h4>	
 									<ul class="cap1">
-										<li><i class="glyphicon glyphicon-map-marker"></i>76 Le Lai Street, District 1, HO CHI MINH CITY</li>
-										<li><i class="glyphicon glyphicon-plane"></i> Tan Son Nhat Airlines</li>
-										<li><i class="glyphicon glyphicon-road"></i> Free Transport</li>
+										<li><i class="glyphicon glyphicon-map-marker"></i>76 Đường Lê Lai, Quận 1, TP.HO CHI MINH</li>
+										<li><i class="glyphicon glyphicon-plane"></i> Gần Bay Tân Sơn Nhất</li>
+										<li><i class="glyphicon glyphicon-road"></i> Miễn Phí Đưa Đón</li>
 									</ul>										
-									<p>Located from level 10 to 14, the 30-square-meter Residence Club Deluxe Rooms present premium accommodation, with marble bathroom and a large work desk. With exclusive access to the Residence Club Living Room, guests can enjoy a wide range of exclusive privileges and benefits. </p>
+									<p>Nằm từ tầng 10 đến 14, 30 mét vuông Residence Club Deluxe Phòng hiện nơi ăn nghỉ cao cấp, với phòng tắm bằng đá cẩm thạch và một bàn làm việc lớn. Với truy cập độc quyền cho các Phòng khách Residence Club, khách có thể tận hưởng một loạt các đặc quyền và lợi ích độc quyền. </p>
 									<div class="detais">
 										<div class="col-md-9 deatils-left">
 											<div class="list">
@@ -354,8 +521,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										</div>
 										<div class="col-md-3 deatils-right">
 											<div class="detail-top">
-												<span>PER NIGHT</span>
-												<h4>$120</h4>
+												<span>MỖI ĐÊM</span>
+												<strike><h5>$290</h5></strike>
+												<h4>$220</h4>
 											</div>
 										</div>
 										<div class="clearfix"> </div>
@@ -371,7 +539,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="edit4">
 				<div class="container">
 					
-					<h3 class="tittle ol1">Offer</h3>
+					<h3 class="tittle ol1">Tin Tức</h3>
 						<div class="col-md-4 wel-grid">
 							<a href="#.html" class="tt1">
 							<img src="images/offer1.jpg" class="img-responsive gray" alt=""/>
@@ -394,7 +562,103 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				</div>
 			<!-- endoffer -->
-			
+<!-- tiennghi -->					
+<div class="desccontainer" id="facilities">	
+														   
+						<div class="descriptions ed1">
+				<h3 class="tittle ol2" id="them">Điểm Đặc Trưng</h3>		
+	<h5>Các tiện nghi</h5>
+	<div class="row facilities">
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Dịch vụ phòng 24/7</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng cho người bị dị ứng</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Khu vực gửi hành lí</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Quầy bar</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Ăn sáng buffet</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Nhà hàng ăn buffet</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Bãi đỗ xe</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng liền kề</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Khu vực hút thuốc riêng</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng cho người tàn tật</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Thang máy</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Nhận/Trả phòng cấp tốc</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng gia đình</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Sân/Vườn</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Thiện cảm người đồng tính</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Nhân viên đa ngôn ngữ</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Báo/Tạp chí</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng không hút thuốc</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Quầy bar bên bể bơi</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Nhà hàng</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Két an toàn</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Cửa hàng trong khách sạn</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng cách âm tiếng ồn</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Khu tắm nắng</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Internet không dây (WIFI)</div>
+	  
+	</div>
+</div>
+
+<div class="descriptions">
+	<h5>Giải trí</h5>
+	<div class="row facilities">
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Đồ nướng thịt ngoài trời</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Sân chơi trẻ em</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Lớp dậy nấu ăn</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Xe đạp</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng chơi game</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Sân Golf</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng tập thể hình</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Bồn tắm sục</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Thư viện</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Massage/Tẩm quất</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Bể bơi ngoài trời</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Sân chơi</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Bàn BI A</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Sauna</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Spa &amp; Chăm sóc sức khoẻ</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Sân Tennis</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Xông hơi</div>
+	  
+	</div>
+</div>
+
+<div class="descriptions ed2">
+	<h5>Các dịch vụ</h5>
+	<div class="row facilities">
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Máy rút tiền ATM</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Trông giữ trẻ</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Cho thuê xe đạp</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Ăn sáng trong phòng</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phương tiện kinh doanh</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Cho thuê xe Ô tô</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phục vụ đặt chỗ, gọi xe</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Trao đổi ngoại tệ</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Gọi bác sỹ riêng</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Fax/Photocopy</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng cho trăng mật</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Đưa/đón sân bay</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Dịch vụ là ủi</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Dịch vụ giặt là</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phòng họp/hội nghị</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Cho thuê xe máy</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Phục vụ ăn trưa</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Chuyển phát/gửi thư</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Đánh giầy</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Đưa/đón theo tuyến (thu phí)</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Cửa hàng đồ lưu niệm</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Ăn kiêng/chay (yêu cầu)</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Dịch vụ đặt vé</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Quầy thông tin du lịch/tour</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Nội thất phòng VIP</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Trang bị chơi thể thao dưới nước</div>
+		   <div class="col-md-3 col-sm-4 col-xs-12"><i class="glyphicon glyphicon-certificate"></i> Dịch vụ đám cưới</div>
+	  
+	</div>
+</div>
+
+														
+          			 </div>
+<!-- //tiennghi -->				
 			<div class="superlist">
 				<div class="container">
 					<h3 class="tittle">New World Hotel Location</h3>
@@ -412,6 +676,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
+					<div class="col-md-3 footer-grid" id="morong">
+						<h4>Site map</h4>
+						<ul>
+							<li><a href="index.html">Trang chủ</a></li>							
+							<li><a href="rooms.html">Phòng</a></li>							
+							<li><a href="service.html">Dịch Vụ</a></li>							
+							<li><a href="gallery.html">Ảnh</a></li>							
+							<li><a href="about.html">Thông Tin</a></li>							
+							<li><a href="contact.html">Liên Hệ</a></li>							
+							<li><a href="location.html">Vị Trí</a></li>							
+						</ul>
+					</div>
 					<div class="col-md-3 footer-grid">
 						<h4>Contact</h4>
 						<ul>
@@ -419,15 +695,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
 							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <a href="#"><a href="mailto:info@example.com">info@example.com</a></a></li>
 							<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
-						</ul>
-					</div>
-					<div class="col-md-3 footer-grid">
-						<h4>Hotel top links</h4>
-						<ul>
-							<li>Our Story</li>
-							<li>Sleep Program</li>
-							<li>Executive Travel Program</li>
-							<li>Enriched Wellness</li>
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
@@ -469,8 +736,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--footer-->
 
 <!-- end footer -->
-<!-- chat -->
+<!-- totop -->
+<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Trở về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
 
-<!-- endchat -->
+<!-- //totop -->
 </body>
 </html>

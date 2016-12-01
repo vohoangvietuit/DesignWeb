@@ -1,6 +1,236 @@
 *{
 }
 
+#facilities i {
+    color: #46a0ef;
+}
+
+div#morong {
+    height: 170px;
+    overflow: hidden;
+}
+
+div#morong:hover {
+    height: 230px;
+    overflow: visible;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    background: #46a0ef;
+}
+
+.no1 a {
+    text-decoration: none;
+}
+.descriptions h5 {
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+.desccontainer {
+    width: 80%;
+    margin-left: 135px;
+    display: block;
+    margin-top: 0px;
+}
+
+div#facilities {
+}
+.desccontainer .descriptions {
+    padding: 12px 0;
+    border-bottom: 1px dotted #ccc;
+    float: left;
+    width: 100%;
+}
+
+.descriptions.ed2 {
+    margin-bottom: 50px;
+}
+
+.descriptions.ed1 {margin-top: 125px;}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+.bushcha img {
+    float: none;
+    width: 51em;
+    height: 32em;
+}
+.bushcha{
+        margin-left: 36em;
+        top: 0em;
+        position: absolute;
+        z-index: 100;
+        overflow: hidden;
+        padding: 5px 0px 0px 1px;
+        border: 1px solid black;
+        background: black;
+        width: 50%;
+}
+.bushcha p {
+    color: wheat;
+        margin-top: 3px;
+    text-align: center;
+}
+.bushcon img {
+    float: none;
+    width: 56em;
+    height: 35em;
+}
+.bushcon{
+        margin-left: 11em;
+        top: 0em;
+        position: absolute;
+        z-index: 100;
+        overflow: hidden;
+        padding: 5px 0px 0px 1px;
+        border: 1px solid black;
+        background: black;
+        width: 58%;
+}
+.bushcon p {
+    color: wheat;
+    margin-top: 3px;
+    text-align: center;
+}
+.bill img {
+    float: none;
+    width: 52em;
+    height: 31em;
+}
+.bill{
+        margin-left: 0em;
+        top: 0em;
+        position: absolute;
+        z-index: 100;
+        overflow: hidden;
+        padding: 5px 0px 0px 1px;
+        border: 1px solid black;
+        background: black;
+        width: 36%;
+}
+.bill p {
+    color: wheat;
+    margin-top: 3px;
+    text-align: center;
+}
+.bill1 img {
+    float: none;
+    width: 32em;
+    height: 30em;
+}
+.bill1{
+        margin-left: 64em;
+        top: 0em;
+        position: absolute;
+        z-index: 100;
+        overflow: hidden;
+        padding: 5px 0px 0px 1px;
+        border: 1px solid black;
+        background: black;
+        width: 33%;
+}
+.bill1 p {
+    color: wheat;
+    margin-top: 3px;
+    text-align: center;
+}
+.pre1 {
+    font-size: 28px;
+    color: white;
+    top: 445px;
+    position: fixed;
+    margin-left: 20px;
+        padding: 5px;
+}
+.pre2 {
+    font-size: 28px;
+    color: white;
+    top: 445px;
+    position: fixed;
+    margin-left: 570px;
+    padding: 5px;
+}
+.pre3 {
+    font-size: 28px;
+    color: white;
+    top: 445px;
+    position: fixed;
+    margin-left: 33em;
+    padding: 5px;
+}
+
+.head_nav.fix {
+  left: 0;
+  max-width: 100%;
+  overflow: visible;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+}
+.hidden{
+    visibility: hidden;
+    
+}
+img.auto{
+       max-width: 100%;
+    max-height: 100%;
+}
+.sanbay{
+    margin-left: 48em;
+    margin-top: -24em;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    width: 40%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+.cho{
+    margin-left: 48em;
+    margin-top: -24em;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    width: 40%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+.congvien{
+    margin-left: 48em;
+    margin-top: -24em;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    width: 40%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+.bookd{
+    margin: 0 auto;
+    position: absolute;
+    z-index: 100;
+    background: white;
+    width: 50%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid black;
+}
 .edit4 {
     background: rgba(0, 173, 138, 0.06);
     margin-top: -20px;
@@ -113,8 +343,8 @@ h4.reser {margin: -15px 0px 16px 61px;color: #46a0ef;}
 .col-md-4.rest-grid1 {}
 
 img.imgbia {
-    width: 347px;
-    height: 286px;
+    width: 372px;
+    height: 302px;
     float: left;
     margin: 49px 0px 0px 22px;
     border-radius: 14%;
@@ -185,6 +415,13 @@ p{
     padding:0;  
     color: #777;
 }
+
+p.info-room {
+    height: 150px;
+    overflow: hidden;
+}
+
+p.info-room:hover {height: 200px;}
 /*--banner--*/
 
 /*---*/
@@ -283,15 +520,15 @@ div#bs-example-navbar-collapse-1 {
 }
 .banner-text {
     position: absolute;
-    top: 40%;
-    background: rgba(144, 143, 143, 0.34);
-    padding: 2em 0;
+    top: 83%;
+    background: rgba(23, 20, 20, 0.41);
+    padding: 1em 0;
     width: 7%;
     text-align: center;
-    margin-left: 38px;
+    margin-left: -42px;
 }
 .banner-text h3 {
-    font-size: 3em;
+    font-size: 32px;
     color:#fff;
 }
 h1.tittle {
@@ -302,8 +539,8 @@ h1.tittle {
     font-family: serif;
 }
 p.wel.text {
-    width: 54%;
-    margin: 1em auto;
+    width: 63%;
+    margin: 2em;
     font-size: 16px;
     line-height: 1.8em;
     text-align: justify;
@@ -377,6 +614,15 @@ ul.cap1 li {
     border: 1px solid #dedede;
     padding: 10px;
 }
+
+.list.no1 {
+    font-size: 16px;
+    margin-left: 450px;
+    margin-top: -96px;
+    width: 25%;
+    border: white;
+    position: absolute;
+}
 .list ul li {
     display: inline-block;
     letter-spacing: 0.2px;
@@ -384,6 +630,11 @@ ul.cap1 li {
     font-size: 0.95em;
     color: #222;
     padding: 1em 0;
+}
+
+.no1 ul li {
+    display: block;
+    margin-left: 32px;
 }.detais {
     margin-top: 2.5em;
 }
@@ -689,7 +940,8 @@ h3.tittle1{
 /*restant*/
 .rest-grid h4{
     font-size: 1.8em;
-    margin-bottom: 18px;
+    margin-bottom: -8px;
+    margin-top: 22px;
 }
 .rest-grid1 h4{
     font-size: 1.8em;
@@ -726,6 +978,7 @@ h3.tittle1{
 .rest-bottom img {
     box-shadow: 0 0 8px #999;
     padding: 0.5em;
+    margin-top: 18px;
 }
 .book_date1 input[type="date"] {
     border: none;
