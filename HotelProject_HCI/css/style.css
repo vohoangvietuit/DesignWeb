@@ -1,5 +1,28 @@
 *{
 }
+.editlabel span{
+    transition: 1s;
+}
+.editlabel span:hover {
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.34);
+    border-radius: 12px;
+    transition: 1s;
+}
+
+.no2 span {
+    color: #4b89bf;
+    transition: 1s;
+}
+
+.no2 span:hover {
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 1s;
+}
 
 #facilities i {
     color: #46a0ef;
@@ -64,7 +87,7 @@ div#facilities {
 }
 .bushcha{
         margin-left: 36em;
-        top: 0em;
+        top: 8px;
         position: absolute;
         z-index: 100;
         overflow: hidden;
@@ -144,23 +167,25 @@ div#facilities {
 .pre1 {
     font-size: 28px;
     color: white;
-    top: 445px;
+    top: 456px;
     position: fixed;
     margin-left: 20px;
-        padding: 5px;
+    padding: 5px;
 }
+
+.banner-text label {}
 .pre2 {
     font-size: 28px;
     color: white;
-    top: 445px;
+    top: 456px;
     position: fixed;
-    margin-left: 570px;
+    margin-left: 534px;
     padding: 5px;
 }
 .pre3 {
     font-size: 28px;
     color: white;
-    top: 445px;
+    top: 456px;
     position: fixed;
     margin-left: 33em;
     padding: 5px;
@@ -178,7 +203,6 @@ div#facilities {
 }
 .hidden{
     visibility: hidden;
-    
 }
 img.auto{
        max-width: 100%;
@@ -640,6 +664,7 @@ ul.cap1 li {
 }
 .list i {
     margin-right: 0.5em;
+    color: black;
 }
 .detail-top {
     padding: 1em;
