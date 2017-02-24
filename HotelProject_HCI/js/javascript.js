@@ -48,6 +48,32 @@ $(document).ready(function(){
 
 });
 
+
+//help
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 500) {
+                $('#back-to-help').fadeIn();
+            } else {
+                $('#back-to-help').fadeOut();
+            }
+        });
+
+    $("#back-to-help").click(function(){
+        $('.chat-window').removeClass('hidden');
+        $('#back-to-help').addClass('hidden');
+    }
+    // ,function(){
+    //     $('.chat-window').addClass('hidden');
+    // }
+    );
+        
+        $('#back-to-help').tooltip('show');
+
+});
+
+
+//menu
         jQuery(document).ready(function($) {
             var $filter = $('.head_nav');
             var $filterSpacer = $('<div />', {
@@ -72,3 +98,8 @@ $(document).ready(function(){
             }
  
         });
+//hide
+// $(document).ready(function(){
+//     $(".sanbay").hide();
+//         $('.bushcha').hide();
+// });

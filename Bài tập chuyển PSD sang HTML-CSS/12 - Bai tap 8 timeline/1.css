@@ -1,0 +1,45 @@
+*{margin:0;padding:0; }
+
+.timeline h3 {
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.timeline p {
+    line-height: 22px;
+    font-size: 15px;
+}
+
+::selection {
+    color: white;
+    background: rgb(164, 175, 14);
+}
+
+img.img-responsive.img-circle {
+    border: 6px solid rgba(156, 154, 154, 0.54);
+}
+
+.duongke {
+    width: 3px;
+    height: 74em;
+    background: rgba(154, 154, 154, 0.64);
+    top: 100px;
+    left: 50%;
+    position: absolute;
+}
+
+.row.timeline {
+    position: relative;
+}
+
+.row.mottin {
+    margin-top: 22px;
+    margin-bottom: 40px;
+}
+
+body {
+    font-family: 'Droid Serif', serif;
+}
+ 
+
+ 

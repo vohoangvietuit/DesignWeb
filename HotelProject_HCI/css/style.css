@@ -1,5 +1,27 @@
 *{
 }
+
+.col-md-5.small-slider {
+    left: 32em;
+    top: -87px;
+}
+
+img.cn1 {
+    position: absolute;
+    margin-top: -57px;
+    margin-left: -78px;
+    zoom: 1.2;
+}
+img.cn2 {
+    position: absolute;
+    margin-top: 16px;
+    margin-left: -102px;
+}
+img.cn3 {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: -105px;
+}
 .editlabel span{
     transition: 1s;
 }
@@ -41,6 +63,14 @@ div#morong:hover {
     cursor: pointer;
     position: fixed;
     bottom: 20px;
+    right: 20px;
+    display:none;
+    background: #46a0ef;
+}
+.back-to-help {
+    cursor: pointer;
+    position: fixed;
+    bottom: 15em;
     right: 20px;
     display:none;
     background: #46a0ef;
@@ -210,7 +240,7 @@ img.auto{
 }
 .sanbay{
     margin-left: 48em;
-    margin-top: -24em;
+    margin-top: -36em;
     position: absolute;
     z-index: 100;
     background: white;
@@ -222,7 +252,7 @@ img.auto{
 }
 .cho{
     margin-left: 48em;
-    margin-top: -24em;
+    margin-top: -36em;
     position: absolute;
     z-index: 100;
     background: white;
@@ -234,7 +264,7 @@ img.auto{
 }
 .congvien{
     margin-left: 48em;
-    margin-top: -24em;
+    margin-top: -36em;
     position: absolute;
     z-index: 100;
     background: white;
@@ -434,6 +464,11 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Nunito', sans-serif;
     color: #333;    
 }
+
+.small-slider h5 {
+    font-size: 18px;
+    margin-left: -9px;
+}
 p{
     margin:0;
     padding:0;  
@@ -586,6 +621,7 @@ p.wel.text1 {
     font-size: 1em;
     line-height: 1.8em;
     text-align: justify;
+    transition: 1s;
 }
 .wel-grid img {
     box-shadow: 0 0 8px #999;

@@ -1,6 +1,43 @@
 *{
     
 }
+i.fa.fa-search {
+    color: white;
+    font-size: 28px;
+}
+
+i.fa.fa-search :hover {
+    color: aqua;
+}
+input[type="date"] {
+    height: 23px;
+}
+.hidden{
+    visibility: hidden;
+}
+input[type="submit"] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+select.select {
+    display: inline;
+    margin-left: 4px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: #ccc;
+}
+
+select.select:hover {
+    background: rgb(192, 253, 253);
+    color: black;
+}
+
+h3.modal-title {
+    width: 50%;
+    display: inline;
+}
 .blog-left img{
     width: 100%;
 }
@@ -413,7 +450,7 @@ ul.nav.navbar-nav {
 .news-grid-info-bottom-text p{
     margin: 1em 0 0 0;
     font-size: .875em;
-    color: #BBBBBB;
+    color: black;
     line-height: 1.8em;
 }
 .admin{

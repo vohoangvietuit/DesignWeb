@@ -18,7 +18,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/font-awesome.css" rel="stylesheet"> 
 <!-- //font-awesome icons -->
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<!-- <script src="js/bootstrap.js"></script> -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/wow.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<!-- <script type="text/javascript">
+	$(document).ready(function(){
+		// if(('#select').val() = '1'){
+		//  $('.khachsan').removeClass('hidden');
+		// 	$('.maohiem').addClass('hidden');
+		// }
+		// if($('#select option:selected').text == ){
+		// 	// $('.maohiem').removeClass('hidden');
+		// 	$('.maohiem').addClass('hidden');
+		// }
+
+		$("#select").change(function() {
+		    // alert($("option:selected", this).text()); //text
+		    // alert($(this).val()); //value
+		    if($("option:selected", this).val() == '2')
+		    {
+		  		$('.khachsan').removeClass('hidden');
+				$('.maohiem').addClass('hidden');				
+				$('.tk').addClass('hidden');
+
+		    }
+		    else if($("option:selected", this).val() == '1'){
+		    	$('.maohiem').removeClass('hidden');
+				$('.khachsan').addClass('hidden');
+				$('.tk').addClass('hidden');
+		    }
+		    else{
+		    	$('.maohiem').addClass('hidden');
+				$('.khachsan').addClass('hidden');
+				$('.tk').removeClass('hidden');
+		    }
+		});
+	});
+
+
+</script> -->
 </head>
 <body>
 <!-- header -->
@@ -26,12 +70,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner">
 		<div class="header">
 			<div class="container">
-				<div class="logo">
+				<div class="logo wow swing">
 					<h1>
 						<a href="index.html">Du Lịch Vịnh Hạ Long</a>
+						<i class="fa fa-search" aria-hidden="true" data-toggle="modal" data-target="#myModal"></i>
 					</h1>
 				</div>
-				<div class="top-nav">
+				<div class="top-nav wow slideInLeft">
 					<nav class="navbar navbar-default">
 							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">Menu						
 							</button>
@@ -44,8 +89,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li><a href="hotels.html">Khách Sạn</a></li>	
 								<li><a href="tips.html">Hướng Dẫn</a></li>
 								<li><a href="intro.html">Giới Thiệu</a></li>								
-								<li><a href="contact.html">Liên Hệ</a></li>
+								<li><a href="contact.html">Liên Hệ</a></li>			
+								<li><a href="#" data-toggle="modal" data-target="#myModal">Tìm kiếm</a></li>
 								<div class="clearfix"> </div>
+<!-- 								<li><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal">Đặt phòng ngay</button></li>		 -->						
 							</ul>	
 						</div>	
 					</nav>		
@@ -61,7 +108,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!-- First Slide -->
                 <div class="item active">
 					<div class="slider">
-						<div class="carousel-caption kb_caption slider-grid">
+						<div class="carousel-caption kb_caption slider-grid wow slideInRight">
 							<h3>Vịnh Hạ Long</h3>
 							<p>Được Unesco nhiều lần công nhận là di sản thiên nhiên của thế giới với hàng nghìn hòn đảo được làm nên bởi tạo hoá kỳ vĩ và sống động. Vịnh Hạ Long có phong cảnh tuyệt đẹp..</p>
 						</div>
@@ -107,33 +154,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- about -->
 	<div class = "about">
 		<div class = "container">
-			<div class = "w3l-about-heading">
+			<div class = "w3l-about-heading wow rollIn"  data-wow-duration="1s" data-wow-delay="1s">
 				<h2>Điểm du lịch</h2>
 				<p>Các địa điểm du lịch nổi tiếng ở Vịnh Hạ Long</P>
 			</div>
 			<div class="about-grids">
-				<div class="col-md-3  col-xm-3 about-grid">
+				<div class="col-md-3  col-xm-3 about-grid wow slideInLeft"  data-wow-duration="1s" data-wow-delay="1s">
 				<a href="tour1.html">
 					<div class="about-grid-info effect-1">
 						<h4>Bãi Cháy </h4>
 					</div>
 				</a>
 				</div>
-				<div class="col-md-3 col-xm-3 about-grid">
+				<div class="col-md-3 col-xm-3 about-grid wow slideInRight"  data-wow-duration="1s" data-wow-delay="1s">
 				<a href="tour2.html">
 					<div class="about-grid-info about-grid-info1 effect-1">
 						<h4>Đảo Cô Tô</h4>
 					</div>
 				</a>
 				</div>
-				<div class="col-md-3 col-xm-3 about-grid">
+				<div class="col-md-3 col-xm-3 about-grid wow slideInLeft"  data-wow-duration="1s" data-wow-delay="1s">
 				<a href="tour3.html">
 					<div class="about-grid-info about-grid-info2 effect-1">
 						<h4>Đảo tuần châu</h4>
 					</div>
 				</a>
 				</div>
-				<div class="col-md-3 col-xm-3 about-grid">
+				<div class="col-md-3 col-xm-3 about-grid wow slideInRight"  data-wow-duration="1s" data-wow-delay="1s">
 				<a href="tour4.html">
 					<div class="about-grid-info about-grid-info3 effect-1">
 						<h4>Núi Yên Tử</h4>
@@ -155,10 +202,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="news-grids">
 				<div class="col-md-4 news-grid">
 					<div class="agile-news-grid-info">
-						<div class="news-grid-info-img">
+						<div class="news-grid-info-img wow slideInLeft">
 							<a href="#.html"><img src="images/ct.jpg" alt="" /></a>
 						</div>
-						<div class="news-grid-info-bottom">
+						<div class="news-grid-info-bottom wow slideInRight">
 							<div class="news-grid-info-bottom-text">
 								<a href="#.html">Cáp treo Hạ Long</a>
 								<p>Cùng trải nghiệm thú vị với sản phẩm du lịch độc đáo và thu hút du khách tại Hạ Long với hệ thống cáp treo Nữ Hoàng và Vòng quay Mặt trời thuộc Sun World Ha Long Park đạt hai kỷ lục thế giới: Cabin có sức chứa lớn nhất thế giới với 230 người/cabin và cáp treo có trụ cáp cao nhất thế giới so với mặt đất, trụ cáp T1 cao 188,88m.</p>
@@ -168,10 +215,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 news-grid">
 					<div class="agile-news-grid-info">
-						<div class="news-grid-info-img">
+						<div class="news-grid-info-img wow slideInLeft">
 							<a href="#.html"><img src="images/dt.jpg" alt="" /></a>
 						</div>
-						<div class="news-grid-info-bottom">
+						<div class="news-grid-info-bottom wow slideInRight">
 							<div class="news-grid-info-bottom-text">
 								<a href="#.html">Du Thuyền</a>
 								<p>Quý khách lựa chọn được những du thuyền phù hợp với mình nhất (Các tiêu chí được đưa ra dưa trên: phong cách phục vụ, trang thiết bị cơ sở vật chất, giá cả và hành trình thăm quan…).</p>
@@ -181,11 +228,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 news-grid">
 					<div class="agile-news-grid-info">
-						<div class="news-grid-info-img">
+						<div class="news-grid-info-img wow slideInLeft">
 							<a href="#.html"><img src="images/kayak.jpg" alt="" /></a>
 						</div>
 						<div class="news-grid-info-bottom">
-							<div class="news-grid-info-bottom-text">
+							<div class="news-grid-info-bottom-text wow slideInRight">
 								<a href="#.html">Tự chèo thuyền kayak</a>
 								<p>Quý khách sẽ được nhẩn nha ngắm trời mây, non nước Hạ Long, được luồn lách vào các hang động, tự tay vuốt ve những nhũ đá, những kỳ hoa, dị thảo, được nâng niu những vỏ ốc, vỏ điệp lấp lánh sắc màu… đem đến những cảm giác thật thi vị cho mỗi người.</p>
 							</div>
@@ -199,8 +246,137 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //news -->
 <!-- end content -->
 
+<!-- tìm kiếm -->
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-xm">
+
+
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">Tìm kiếm</h3>
+<!--         							<select class="select" id="select">
+										<option value="0">trong web</option>								   <option value="1">tour du lịch</option>
+										<option value="2">khách sạn</option>
+									</select> -->
+      </div>
+      <div class="modal-body">
+        					<div>
+
+							<div class="reser-grid1 tk" id="tk">
+								<h5>Từ khóa: </h5>
+								<input type="text">		
+								<div class="best-hot">
+									<form action="#" method="post">
+										<input type="submit" value="Tìm">
+									</form>
+								</div>
+							</div>								
+
+<!-- 							<div class="reser-grid1 maohiem hidden" id="maohiem">
+	<h5>Nơi khởi hành:</h5>
+	<div class="best-hot1">
+		<select class="sel">
+			<option value="">TPHCM</option>		  							       <option value="">Hà Nội</option>
+			<option value="">Đà Nẵng</option>
+		</select>
+	</div>
+	<h5>Ngày đến</h5>
+	<div class="book_date1">							
+		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+		<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+	</div>
+	<h5>Ngày đi</h5>
+	<div class="book_date1">							
+		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+		<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+	</div>
+	<h5>Loại tour:</h5>
+	<div class="best-hot1">
+		<select class="sel">
+			<option value="">Tour bình thường</option>
+			<option value="">Tour cao cấp</option>
+		</select>
+	</div>
+	<h5>Giá:</h5>
+	<div class="best-hot1">
+		<select class="sel">
+			<option value="">Dưới 1 triệu</option>
+			<option value="">1 - 2 triệu</option>
+			<option value="">3 - 4 triệu</option>
+			<option value="">Trên 4 triệu</option>
+		</select>
+	</div>
+	<h5>Giảm giá:</h5>
+	<select class="sel1">
+		<option value="">Có</option>
+		<option value="">Không</option>
+	</select>							
+
+		<h5>Phương tiện</h5>
+	<select class="sel1">
+		<option value="">Xe khách</option>
+		<option value="">Tàu hỏa</option>				
+		<option value="">Máy bay</option>
+	</select>
+	<div class="best-hot">
+		<form action="#" method="post">
+			<input type="submit" value="Tìm">
+		</form>
+	</div>
+</div>							
+
+<div class="reser-grid1 khachsan hidden" id="khachsan">
+
+	<h5>Ngày đến</h5>
+	<div class="book_date1">							
+		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+		<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+	</div>
+	<h5>Ngày đi</h5>
+	<div class="book_date1">							
+		<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+		<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">													
+	</div>
+	<h5>Loại Khách Sạn:</h5>
+	<div class="best-hot1">
+		<select class="sel">
+			<option value="">Giá rẻ</option>		  							       <option value="">Bình thường </option>
+			<option value="">Cao cấp</option>
+		</select>
+	</div>
+	<h5>Giá tiền:</h5>
+	<div class="best-hot1">
+		<select class="sel">
+			<option value="">1tr</option>
+			<option value="">2tr</option>
+			<option value="">3tr</option>
+			<option value="">3tr+</option>
+		</select>
+	</div>
+	<div class="best-hot">
+		<form action="#" method="post">
+			<input type="submit" value="Tìm" id="nhap">
+		</form>
+	</div>
+</div> -->
+							<div class="clearfix"></div>
+					</div>
+      </div>
+<!--       <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+      </div> -->
+    </div>
+
+  </div>
+</div>	
+<!-- tìm kiếm -->
+
 <!-- footer -->
-	<div class="footer">
+	<div class="footer wow zoomIn" data-wow-delay="2">
 		<div class="container">
 			<div class="footer-grids">
 				<div class="col-md-3 footer-grid">
@@ -222,10 +398,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="footer-grid-info">
 						<ul>
-							<li><a href="about.html">About</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="gallery.html">Gallery</a></li>
-							<li><a href="contact.html">Contact</a></li>
+								<li><a class="active" href="index.html">Trang Chủ</a></li>
+								<li><a href="services.html">Dịch Vụ</a></li>
+								<li><a href="tours.html">Điểm Du Lịch</a></li>									
+								<li><a href="infotour.html">Tour</a></li>	
+								<li><a href="hotels.html">Khách Sạn</a></li>	
+								<li><a href="tips.html">Hướng Dẫn</a></li>
+								<li><a href="intro.html">Giới Thiệu</a></li>								
+								<li><a href="contact.html">Liên Hệ</a></li>	
 						</ul>
 					</div>
 				</div>
@@ -248,7 +428,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="footer-grid-info">
 						<form action="#" method="post">
-							<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Enter your email here" required="">
+							<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Nhập email tại đây" required="">
 							<input type="submit" value="Theo dõi">
 						</form>
 					</div>

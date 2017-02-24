@@ -2,7 +2,11 @@
 	
 /* margin: 0 -6px; */
 }
-
+span.vnd {
+    position: absolute;
+    top: 6px;
+    left: 335px;
+}
 select#method1 {
     margin-left: 16px;
     margin-right: -14px;

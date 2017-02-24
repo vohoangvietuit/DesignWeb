@@ -4,9 +4,9 @@
 <title>Khách sạn New World</title>
 <link rel="icon" href="images/icon_hotel.ico" type="image/x-icon">
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- icon style -->
-<!-- <link href="css/glyphicons.css" rel="stylesheet"> -->
-<!-- //icon style -->
+<!-- small slider -->
+<link href="css/flexisel.css" rel="stylesheet">
+<!-- //small slider -->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <link href="css/font-awesome.css" rel="stylesheet">
@@ -92,7 +92,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					});
 					});
 				</script>
-			<!-- FlexSlider -->
+			<!-- FlexSlider -->			
+
+<link href="css/textbox.css" rel="stylesheet">
+				<script type="text/javascript">
+$(document).on('click', '.panel-heading span.icon_minim', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('focus', '.panel-footer input.chat_input', function (e) {
+    var $this = $(this);
+    if ($('#minim_chat_window').hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $('#minim_chat_window').removeClass('panel-collapsed');
+        $('#minim_chat_window').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '#new_chat', function (e) {
+    var size = $( ".chat-window:last-child" ).css("margin-left");
+     size_total = parseInt(size) + 400;
+    alert(size_total);
+    var clone = $( "#chat_window_1" ).clone().appendTo( ".container" );
+    clone.css("margin-left", size_total);
+});
+$(document).on('click', '.icon_close', function (e) {
+    //$(this).parent().parent().parent().parent().remove();
+    // $( "#chat_window_1" ).remove();
+    $('.chat-window').addClass('hidden');
+    $('#back-to-help').removeClass('hidden');
+});
+
+				</script>
+
+
+			
 
 </head>
 <body>
@@ -182,6 +223,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     $('.bushcha').addClass('hidden');
 });
 						</script>							
+<!-- 												<script>
+							$(".preview4").hover(function(){
+    $('.bushcha').fadeIn("slow");
+},function(){
+    $('.bushcha').fadeOut("slow");
+});
+						</script>	 -->						
 
 						<div class="bushcon hidden">
 							<img class="resizeb" src="images/president/5.jpg" alt="">
@@ -268,15 +316,56 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<img src="images/b5.jpg" alt="anhbia" class="imgbia">
 						<p class="wel text">Khách sạn New World Saigon có tổng diện tích mặt bằng 12.192m2, tổng diện tích xây dựng 55.760m2, số tầng là 14 và chiều cao 60m. Quy mô 560 phòng khách các loại, 3 nhà hàng lớn, 3 phòng hội nghị – yến tiệc cùng đầy đủ các dịch vụ hỗ trợ một cách hoàn hảo để phục vụ khách lưu trú. Là KS thuộc Công ty Liên doanh khách sạn Saigon Inn, tọa lạc tại một vị trí thuận lợi ở trung tâm TPHCM, KS New World Sài Gòn thường được các thương gia, khách du lịch quốc tế chọn làm nơi lưu trú. KS có phòng Presidential Suite hay còn gọi là phòng dành cho tổng thống với diện tích 181 mét vuông, bao gồm 2 phòng ngủ cao cấp, phòng khách, phòng làm việc, hai phòng tắm lớn,… tất cả đều được bài trí các loại trang thiết bị tiện nghi sang trọng bậc nhất dành cho các nguyên thủ quốc gia.</p>
 						<div class="clearfix"></div>
-											<div class="list no1">
+<!-- 											<div class="list no1">
 												<h5>Đặc điểm nổi bật:</h5>
 												<ul class="no2">
 													<li><span class="preview1"><i class="glyphicon glyphicon-plane"></i>Gần sân bay</span></li>
 													<li><span class="preview2"><i class="glyphicon glyphicon-shopping-cart"></i>Gần khu mua sắm</span></li>	
-													<li><span class="preview3"><i class="glyphicon glyphicon-tree-deciduous"></i>Tầm nhìn đẹp</span></li>		   <li class="curso"><a href="index.html#them"><i class="	glyphicon glyphicon-option-horizontal"></i>Thêm</a></li>								
+													<li><span class="preview3"><i class="glyphicon glyphicon-tree-deciduous"></i>Tầm nhìn đẹp</span></li>		   <li class="curso"><a href="index.html#them" data-toggle="tooltip" data-placement="right" title="Click"><i class="	glyphicon glyphicon-option-horizontal"></i>Thêm</a></li>								
 
 												</ul>
-											</div>
+											</div> -->
+<!-- slider small-->
+			<div class="col-md-5 small-slider">
+				<h5>Đặc điểm nổi bật:</h5>
+ 		<ul id="flexiselDemo1">
+			<li id="preview1"><img src="images/sanbay.jpg"/><div class="grid-flex"><a href="#"">Gần sân bay</a></div></li>
+			<li id="preview2"><img src="images/cho.jpg" /><div class="grid-flex"><a href="#">Gần khu mua sắm</a></div></li>
+			<li id="preview3"><img src="images/congvien.jpg" /><div class="grid-flex"><a href="#">Tầm nhìn đẹp</a></div></li>	
+<!-- 			<li><img src="images/b3.jpg" /><div class="grid-flex"><a href="#">Text</a><p>Rs 850</p></div></li>
+			<li><img src="images/b4.jpg" /><div class="grid-flex"><a href="#">Sit</a><p>Rs 850</p></div></li> -->
+		 </ul>
+	    <script type="text/javascript">
+		 $(window).load(function() {
+			$("#flexiselDemo1").flexisel({	
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+	</script>
+	<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+
+</div>
+<!-- slider small-->											
 						<div class="sanbay hidden">
 							<img class="auto" src="images/sanbay.jpg" alt="">
 							<p>Cách 20 phút từ sân bay và ngay trung tâm doanh nghiệp và thương mại, không có vị trí nào tốt hơn ở tại TP.HCM. </p>
@@ -290,28 +379,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<p>Từ phòng, ta có thể nhìn ra công viên Lê Lai. Với không khí sạch, thoáng mát của cây xanh</p>
 						</div>
 						<script>
-							$(".preview1").hover(function(){
+							$("#preview1").hover(function(){
     $('.sanbay').removeClass('hidden');
 },function(){
     $('.sanbay').addClass('hidden');
 });
 						</script>					
 							<script>
-							$(".preview2").hover(function(){
+							$("#preview2").hover(function(){
     $('.cho').removeClass('hidden');
 },function(){
     $('.cho').addClass('hidden');
 });
 						</script>								
 						<script>
-							$(".preview3").hover(function(){
+							$("#preview3").hover(function(){
     $('.congvien').removeClass('hidden');
 },function(){
     $('.congvien').addClass('hidden');
 });
-						</script>											
+						</script>	
+						
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
-						</script>
+						
 				</div>
 
 <!-- datphong -->
@@ -319,11 +414,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
+
+
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h3 class="modal-title">Đặt Phòng Ngay</h3>
+        <h3 class="modal-title">Đặt Phòng</h3>
       </div>
       <div class="modal-body">
         					<div>
@@ -374,9 +471,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<div class="clearfix"></div>
 					</div>
       </div>
-      <div class="modal-footer">
+<!--       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-      </div>
+      </div> -->
     </div>
 
   </div>
@@ -676,6 +773,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="footer-section">
 			<div class="container">
 				<div class="footer-grids">
+					<div class="col-md-3 footer-grid" id="morong1">
+						<div class="tripadvisor" style="height: 54px;"><iframe src="http://www.tripadvisor.com/WidgetEmbed-cdspropertydetail?locationId=NWSGN&amp;partnerId=437ED1EC481A48B48C86E1A52F64AF31&amp;lang=en_US&amp;display=true" width="200" scrolling="no" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+					<div class="tripadvisor_readmore"><a class="iframe cboxElement" href="http://www.tripadvisor.com/WidgetEmbed-cdspropertydetail?locationId=NWSGN&amp;partnerId=4796400113F2459D9738F033A7B96E88&amp;lang=en_US&amp;display=true"><img height="38" src="https://d1mwx8jecnk4de.cloudfront.net/wp-content/themes/newworldhotels/images/ta_read_more.png" alt="TripAdvisor"></a></div></div>
+					<img src="images/cn1.png" class="cn1" alt="">
+					<img src="images/cn2.png" class="cn2" alt="">
+					<img src="images/cn3.png" class="cn3" alt="">
+					</div>					
 					<div class="col-md-3 footer-grid" id="morong">
 						<h4>Site map</h4>
 						<ul>
@@ -688,17 +792,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<li><a href="location.html">Vị Trí</a></li>							
 						</ul>
 					</div>
-					<div class="col-md-3 footer-grid">
-						<h4>Contact</h4>
+<!-- 					<div class="col-md-3 footer-grid">
+						<h4>Liên Hệ</h4>
 						<ul>
-							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>
+							<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> Office : 0041-456-3692</li>							
 							<li><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Mobile : 0200-123-4567</li>
 							<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i> <a href="#"><a href="mailto:info@example.com">info@example.com</a></a></li>
 							<li><i class="glyphicon glyphicon-print" aria-hidden="true"></i> Fax : 0091-789-456100</li>
 						</ul>
-					</div>
+					</div> -->
 					<div class="col-md-3 footer-grid">
-						<h4>Our Rooms</h4>
+						<h4>Phòng</h4>
 						<ul>
 							<li>Guest Room</li>
 							<li>Residence Club Room</li>
@@ -707,7 +811,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 					</div>
 					<div class="col-md-3 footer-grid">
-						<h4>Our Services </h4>
+						<h4>Dịch Vụ</h4>
 						<ul>
 							<li>Room services</li>
 							<li>Free internet Wifi</li>
@@ -723,7 +827,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="copy-section">
 				<div class="container">
 					<div class="footer-top">
-						<p>All rights reserved - DoubleV</p>
+						<p>+84 8 3822 8888</p>
+						<p>76 Le Lai Street, District 1, Ho Chi Minh City, Vietnam</p>
 					</div>
 					<div class="social-icons">
 						<a href="#"><i class="icon"></i></a>
@@ -738,7 +843,104 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- end footer -->
 <!-- totop -->
 <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Trở về đầu trang" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
-
 <!-- //totop -->
+<!-- help -->
+<!-- <a id="back-to-help" href="#" class="btn btn-primary btn-lg back-to-help" role="button" title="Giúp đỡ - Tư vấn" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-search"></span></a>
+ -->
+<button id="back-to-help" type="button" class="btn btn-primary btn-lg back-to-help" data-toggle="tooltip" title="Giúp đỡ - Tư vấn" data-placement="left"><span class="glyphicon glyphicon-user"></button>
+<!-- //help -->
+
+<div class="row chat-window col-xs-5 col-md-3 hidden" id="chat_window_1" style="margin-left:68em;">
+        <div class="col-xs-12 col-md-12">
+        	<div class="panel panel-default">
+                <div class="panel-heading top-bar">
+                    <div class="col-md-8 col-xs-8">
+                        <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Tư Vấn</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-4" style="text-align: right;">
+                        <span id="minim_chat_window" class="glyphicon glyphicon-minus icon_minim"></span>
+                        <span class="glyphicon glyphicon-remove icon_close" data-id="chat_window_1"></span>
+                    </div>
+
+                </div>
+                <div class="panel-body msg_container_base">
+                    <div class="row msg_container base_sent">
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_sent">
+                                <p>Chúng tôi sẽ giải đáp mọi thắc mắc cho bạn, bạn cần tìm phòng như thế nào?</p>
+                                <time datetime="2009-11-13T20:00">Ngọc • 51 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                    </div>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-md-10 col-xs-10">
+                            <div class="messages msg_receive">
+                                <p>Hum, tôi cần tìm phòng có tầm nhìn đẹp, dịch vụ tốt.</p>
+                                <time datetime="2009-11-13T20:00">Nghĩa • 51 min</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-xs-10 col-md-10">
+                            <div class="messages msg_receive">
+                                <p>Ak, phòng một người thôi.</p>
+                                <time datetime="2009-11-13T20:00">Nghĩa • 51 min</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row msg_container base_sent">
+                        <div class="col-xs-10 col-md-10">
+                            <div class="messages msg_sent">
+                                <p>Vậy tôi đề nghị bạn nên chọn phòng Single đang có giảm giá và tầm nhìn đẹp.</p>
+                                <time datetime="2009-11-13T20:00">Ngọc • 51 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                    </div>
+                    <div class="row msg_container base_receive">
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                        <div class="col-xs-10 col-md-10">
+                            <div class="messages msg_receive">
+                                <p>Oh cám ơn</p>
+                                <time datetime="2009-11-13T20:00">Nghĩa • 51 min</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row msg_container base_sent">
+                        <div class="col-md-10 col-xs-10 ">
+                            <div class="messages msg_sent">
+                                <p>Cám ơn bạn đã liên hệ vs chúng tôi.</p>
+                                <time datetime="2009-11-13T20:00">Ngọc • 51 min</time>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-xs-2 avatar">
+                            <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
+                        <span class="input-group-btn">
+                        <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                        </span>
+                    </div>
+                </div>
+    		</div>
+        </div>
+    </div>
 </body>
 </html>

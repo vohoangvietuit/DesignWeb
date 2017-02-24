@@ -1,6 +1,39 @@
 *{
     
 }
+select#select {
+    display: inline;
+    font-size: 20px;
+}
+
+h3.modal-title {
+    display: inline;
+}
+i.fa.fa-search {
+    color: black;
+    font-size: 24px;
+}
+.head_nav.fix {
+  left: 0;
+  max-width: 100%;
+  overflow: visible;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 1;
+}
+
+input[type="date"] {
+    width: 99%;
+}
+
+.best-hot input[type="submit"] {
+    margin-top: 12px;
+    background: paleturquoise;
+    font-size: 15px;
+    width: 99%;
+}
 .about-grid a {
     text-decoration: none;
 }
@@ -100,7 +133,7 @@ div#bs-example-navbar-collapse-1 {
 }
 .logo h1 a{
     color:#fff;
-    font-size: 32px;
+    font-size: 30px;
     text-decoration:none;
     font-family: 'Pacifico', cursive;
     text-shadow: 3px 3px black;
@@ -392,7 +425,7 @@ ul.nav.navbar-nav {
 .news-grid-info-bottom-text p{
     margin: 1em 0 0 0;
     font-size: .875em;
-    color: #BBBBBB;
+    color: black;
     line-height: 1.8em;
 }
 .admin{
