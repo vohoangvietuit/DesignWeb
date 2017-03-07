@@ -1,0 +1,218 @@
+*{margin:0;padding:0; }
+
+.giaohang p {
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: rgba(128, 128, 128, 0.74);
+}
+
+.footer {
+    background: #233140;
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.lienhe i.fa {
+    padding-right: 6px;
+}
+
+.lienhe a.email {
+    color: #50fbdd;
+    font-size: 16px;
+}
+
+.lienhe p {
+    padding-bottom: 15px;
+}
+
+.lienhe {
+    background: black;
+    color: white;
+    height: 500px;
+    padding: 100px;
+}
+
+.giaohang button.btn.btn-primary {
+    padding: 18px;
+    background: #50fbdd;
+    border: none;
+    color: black;
+    font-size: 20px;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.giaohang button.btn.btn-primary:hover {
+    background: black;
+    color: #50fbdd;
+}
+
+input.form-control {
+    font-size: 24px;
+    border: 0 solid;
+    box-shadow: 0 0 0 transparent;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.23);
+    padding: 30px 6px;
+}
+
+.chohang input.form-control {}
+
+.giaohang {
+    padding: 80px 0;
+}
+
+.gioithieu1 {
+    background: black;
+    color: white;
+    padding: 100px 0px;
+}
+
+._2nut .btn.btn-default {
+    margin-left: 20px;
+    border-radius: 20px;
+    padding: 8px 17px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    transition: 0.4s;
+    box-shadow: inset 0px 2px 5px 0px #9d9d9d;
+}
+
+.btn.btn-default:hover {
+    background: rgb(80, 251, 221);
+    animation: pulse 1s;
+}
+
+.lienhe a.btn.btn-default {
+    background: black;
+    color: #50fbdd;
+    border-color: #50fbdd;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: 6px;
+    border-radius: 0px;
+    transition: 1s;
+}
+
+.lienhe a.btn.btn-default:hover {
+    background: #50fbdd;
+    color: black;
+}
+
+.contain-chu p {
+    font-size: 20px;
+    text-shadow: 1px 2px 1px black;
+    padding-bottom: 25px;
+}
+
+h2.tieude {
+    font-size: 50px;
+    text-shadow: 3px 3px 2px black;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+}
+
+.giaohang h2.tieude {
+    text-shadow: none;
+}
+
+.gioithieu {
+    background: url(images/truck_1.jpg);
+    background-size: cover;
+    height: 600px;
+    color: white;
+    padding-top: 200px;
+}
+
+.collapse.navbar-collapse.navbar-ex1-collapse {
+}
+
+.chohang .btn.btn-default {
+    display: inline;
+    border-radius: 0;
+    background: white;
+    border: transparent;
+    color: black;
+    padding: 10px 12px;
+}
+
+.chohang .btn.btn-default:hover {
+    background: #50fbdd;
+    color: #2f0601;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-top: 5px solid transparent;
+    margin: 0px 18px;
+    padding: 22px 0px;
+    transition: all 0.8s;
+}
+
+.tienhoa .navbar-nav>li>a {
+    padding: 16px 0px;
+}
+
+.tienhoa .navbar-default .navbar-nav>li>a {
+}
+
+a {}
+
+a.chohang:hover {
+    animation: tada 1s;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {color: #50fbdd;border-color: #50fbdd;}
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background: transparent;
+    color: #50fbdd;
+    border-color: #50fbdd;
+}
+
+a.navbar-brand {
+    font-size: 38px;
+    font-weight: 700;
+    padding-top: 22px;
+    transition: 0.8s;
+}
+
+.tienhoa a.navbar-brand {
+    font-size: 28px;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+    text-shadow: 5px 3px 5px black;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {color: white;}
+
+nav.navbar.navbar-default {
+    background: transparent;
+    border: transparent;
+    height: 80px;
+    transition: all 0.4s;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.tienhoa {
+    background: black;
+    height: 65px;
+}
+
+body{
+   font-family: 'Montserrat', sans-serif;
+}
+.containt-tieude p {
+    font-size: 18px;
+}
+
+i.fa.fa-truck {
+    padding-right: 6px;
+}
