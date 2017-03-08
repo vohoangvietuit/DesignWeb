@@ -1,5 +1,74 @@
 *{margin:0;padding:0; }
 
+#back-to-top .fa.fa-chevron-up {
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+.giaohang i.fa {
+    left: 0;
+    font-size: 26px;
+    top: 0px;
+    padding: 18px;
+}
+
+.khung {
+    position: relative;
+    overflow: hidden;
+}
+
+.slidexacnhan h4 {
+    font-size: 22px;
+}
+
+.slidexacnhan .carousel-indicators {
+    bottom: -28px;
+}
+
+.slidexacnhan {
+    background: url(images/people.jpeg);
+    background-size: cover;
+    color: white;
+    height: 250px;
+    padding: 80px 0px;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.mautintuc .btn.btn-default {
+    border-radius: 0px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.mautintuc h3 {
+    font-weight: 700;
+}
+
+.mautintuc a {
+    text-decoration: none;
+    color: black;
+}
+
+.mautintuc img {
+    height: 200px;
+    width: 100%;
+    transition: all 0.4s ease;
+    opacity: 0.8;
+}
+
+.mautintuc :hover img {
+    transform: scale(1.1);
+    opacity: 1;
+    box-shadow: 0px 0px 30px gray; /*Ã„ÂÃ¡Â»â€¢ bÃƒÂ³ng bÃ¡ÂºÂ±ng CSS3*/
+}
+
+
+.tintuc .col-xs-4.col-sm-4.col-md-4.col-lg-4 {
+}
+
+.tintuc {padding: 100px 0px;}
+
 .giaohang p {
     margin-top: -10px;
     margin-bottom: 30px;
@@ -18,7 +87,7 @@
 }
 
 .lienhe a.email {
-    color: #50fbdd;
+    color: black;
     font-size: 16px;
 }
 
@@ -27,10 +96,11 @@
 }
 
 .lienhe {
-    background: black;
-    color: white;
+    background: url(images/truck.jpeg);
+    color: black;
     height: 500px;
     padding: 100px;
+    text-shadow: 1px 1px 1px white;
 }
 
 .giaohang button.btn.btn-primary {
@@ -54,6 +124,7 @@ input.form-control {
     box-shadow: 0 0 0 transparent;
     border-bottom: 1px solid rgba(128, 128, 128, 0.23);
     padding: 30px 6px;
+    padding-left: 72px;
 }
 
 .chohang input.form-control {}
@@ -114,6 +185,15 @@ h2.tieude {
     font-family: 'Lora', serif;
 }
 
+.tintuc h2.tieude {
+    text-shadow: none;
+    padding-bottom: 40px;
+}
+
+.lienhe h2.tieude {
+    text-shadow: none;
+}
+
 .giaohang h2.tieude {
     text-shadow: none;
 }
@@ -161,7 +241,11 @@ h2.tieude {
 .tienhoa .navbar-default .navbar-nav>li>a {
 }
 
-a {}
+a#back-to-top {display: none; background: rgb(0, 0, 0);position: fixed;bottom: 10px;right: 8px;padding: 12px 14px;border: none;opacity: 0.7;transition: 0.4s;}
+
+a#back-to-top:hover {
+    opacity: 1;
+}
 
 a.chohang:hover {
     animation: tada 1s;
@@ -203,7 +287,7 @@ nav.navbar.navbar-default {
 
 nav.navbar.navbar-default.navbar-fixed-top.tienhoa {
     background: black;
-    height: 65px;
+    height: 64px;
 }
 
 body{
@@ -216,3 +300,27 @@ body{
 i.fa.fa-truck {
     padding-right: 6px;
 }
+.mautintuc {
+    padding-bottom: 20px;
+}
+/*.chohang i.fa.fa-truck {
+    padding-left: 6px;
+    transform: scaleX(-1);
+}*/
+
+/* Webkit override Scrollbar with CSS3 */
+::-webkit-scrollbar {
+width: 8px; height:8px;
+}
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+background:#fff;
+}
+::-webkit-scrollbar-thumb {
+background: #50fbdd;
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+background: #50fbdd;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
