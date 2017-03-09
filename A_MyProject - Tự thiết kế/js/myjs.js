@@ -24,8 +24,15 @@
 	 	$('body').animate({scrollTop: $('#gioithieu1').offset().top - 100}, 2000, "easeInOutExpo")
 	 })
 	 $('.n3').click(function(){
-	 	$('body').animate({scrollTop: $('#giaohang').offset().top + 30}, 2000, "easeInOutExpo")
+	 	$('body').animate({scrollTop: $('#giaohang').offset().top + 24}, 2000, "easeInOutExpo")
 	 })
+	 //taixe
+	 $('.taixe').click(function(){
+	 	$('body').animate({scrollTop: $('#giaohang').offset().top + 24}, 2000, "easeInOutExpo");
+	 	$('.change').removeClass('active');
+	 	$('.change1').addClass('active');
+	 })
+
 	 $('.n4').click(function(){
 	 	$('body').animate({scrollTop: $('#lienhe').offset().top}, 2000, "easeInOutExpo")
 	 })
@@ -48,6 +55,19 @@
 	 		$('.truckrun').removeAttr("style","visibility: visible; animation-name: bounceOutLeft;");
 	 	}
 	 })
+
+	 $('.taixe').click(function(){
+	 	// $('.taixe').addClass("wow bounceOutLeft");
+	 	$('.taixe').attr("style","visibility: visible; animation-name: bounceOutDown; animation-duration: 2.5s");
+	 })
+	 $(window).scroll(function(){
+	 	if($('body').scrollTop() > $('.taixe').offset().top)
+	 	{
+	 		// $('.taixe').removeClass('wow bounceOutLeft');
+	 		$('.taixe').removeAttr("style","visibility: visible; animation-name: bounceOutDown;");
+	 	}
+	 })
+
 
 	 // $('.chohang').click(function(){
 	 // 	// $('.truckrun').addClass("wow bounceOutLeft");
