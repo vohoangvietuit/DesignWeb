@@ -1,4 +1,5 @@
 ﻿ $(function(){
+
 	 $(window).scroll(function(){
 	 	vitrihientai = $('body').scrollTop();
 	 	if(vitrihientai > 300){
@@ -130,4 +131,21 @@
 
 	 new WOW().init();
 
+
+	 //js cho hieu ung phong to anh
+	 	// 	$(".anh_phong_to").fancybox({
+			// 	padding: 0,
+
+			// 	openEffect : 'elastic',
+			// 	openSpeed  : 150,
+
+			// 	closeEffect : 'elastic',
+			// 	closeSpeed  : 150,
+
+			// 	closeClick : true,
+
+			// 	helpers : {
+			// 		overlay : null
+			// 	}
+			// });
 })

@@ -5,10 +5,30 @@
 	<link rel="icon" href="images/icon.png" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Add jQuery library -->
+<!-- 	<script type="text/javascript" src="fancybox/lib/jquery-1.8.2.min.js"></script> -->
+
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/wow.js"></script>
 	<script type="text/javascript" src="js/myjs.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+	<!-- fancybox -->
+
+		<!-- Add mousewheel plugin (this is optional) -->
+<!-- 		<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script> -->
+
+		<!-- Add fancyBox main JS and CSS files -->
+<!-- 		<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.3"></script>
+		<link rel="stylesheet" type="text/css" href="fancybox/source/jquery.fancybox.css?v=2.1.2" media="screen" /> -->
+
+	<!-- endfancybox -->
+
+	<!-- fancybox3 -->
+	<link  href="fancybox/jquery.fancybox.min.css" rel="stylesheet">
+	<script src="fancybox/jquery.fancybox.min.js"></script>
+	<!-- end fancybox3 -->
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -16,7 +36,7 @@
  	<link rel="stylesheet" href="css/mystyle.css">
  	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
  	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
-	<script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+
 
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -227,7 +247,7 @@
 				</div>
 			</div>
 		</div>
-	</div>  <!-- end slide -->
+	</div>  <!-- end slidexacnhan -->
 
 	<div class="tintuc" id="tintuc">
 		<div class="container">
@@ -238,7 +258,7 @@
 
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<div class="mautintuc">
-							<a href="">
+							<a href="images/sale.png" title="Tiêu đề của hình ảnh" class="anh_phong_to"  data-fancybox data-caption="My caption">
 								<div class="khung">
 									<img src="images/sale.png" alt="" class="img-responsive">
 								</div>
@@ -250,7 +270,7 @@
 					</div>  <!-- end col -->
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<div class="mautintuc">
-							<a href="">
+							<a href="images/people.jpeg"  data-fancybox data-caption="My caption">
 								<div class="khung">
 									<img src="images/people.jpeg" alt="" class="img-responsive">
 								</div>
@@ -262,7 +282,7 @@
 					</div>  <!-- end col -->
 					<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
 						<div class="mautintuc">
-							<a href="">
+							<a href="images/truck.jpeg" class="anh_phong_to">
 								<div class="khung">
 									<img src="images/truck.jpeg" alt="" class="img-responsive">
 								</div>
@@ -281,7 +301,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-push-2">
-					<div class="containt-tieude text-center wow bounceInUp">
+					<div class="containt-tieude text-center wow bounceInUp" data-wow-duration="2s">
 						<h2 class="tieude">Liên Hệ</h2>
 						<p>Liên hệ với chúng tôi theo các thông tin email hoặc mạng xã hội dưới đây</p>
 						<a href="mailto:vohoangvietuit@gmail.com" class="email">vohoangvietuit@gmail.com</a>

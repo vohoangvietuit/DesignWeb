@@ -40,7 +40,10 @@ p.thongtin.tx {
     border-color: transparent;
     background: transparent;
 }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+        border-color: transparent;
 
+}
 .nav-tabs {
     border: none;
 }
