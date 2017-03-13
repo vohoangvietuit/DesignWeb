@@ -1,4 +1,3 @@
-
 	<div class="giaohang" id="giaohang">
 		<div class="container">
 			<div class="row">
@@ -24,80 +23,14 @@
 
 					<div class="tab-content">
 					  <div id="chohangtab" class="tab-pane fade in active">
-						<form action="" method="POST" role="form">
-							<p class="thongtin">Nhập thông tin và chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất - Liên hệ với chúng tôi qua số <span class="xanh">01289995477</span></p>
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control myfocus" id="" placeholder="Tên khách hàng" required="">
-								<i class="form-control-feedback fa fa-user"></i>
-							</div>
-
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Số điện thoại" required>
-								<i class="form-control-feedback fa fa-phone"></i>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="email" class="form-control" id="" placeholder="Email" required>
-								<i class="form-control-feedback fa fa-envelope"></i>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Loại hàng" required>
-								<i class="form-control-feedback fa fa-object-group"></i>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="number" class="form-control" id="" placeholder="Khối lượng hàng (kg)" required>
-								<i class="form-control-feedback fa fa-balance-scale"></i>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Địa điểm lấy hàng" required>
-								<i class="form-control-feedback fa fa-location-arrow"></i>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Địa điểm chở tới" required>
-								<i class="form-control-feedback fa fa-map-marker"></i>
-							</div>
-
-
-							<button type="submit" class="btn btn-primary">Xác nhận</button>
-						</form>
+						<?php echo do_shortcode( '[contact-form-7 id="5" title="Form vận chuyển"]' ); ?>
+						
 					  </div>  <!-- end form giao hang -->
 
 					  <div id="menu1" class="tab-pane fade">
-						<form action="" method="POST" role="form">
-							<p class="thongtin tx">Nhập thông tin và chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất - Liên hệ với chúng tôi qua số <span class="xanh">01289995477</span></p>
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control myfocus1" id="" placeholder="Tên tài xế" required>
-								<i class="form-control-feedback fa fa-user"></i>
-							</div>
-
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Số điện thoại" required>
-								<i class="form-control-feedback fa fa-phone"></i>
-							</div>
-
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Email" required>
-								<i class="form-control-feedback fa fa-envelope"></i>
-							</div>
-
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Loại xe" required>
-								<i class="form-control-feedback fa fa-object-group"></i>
-							</div>
-
-							<div class="form-group has-feedback">
-								<input type="number" class="form-control" id="" placeholder="Khối lượng hàng có thể chở(kg)" required>
-								<i class="form-control-feedback fa fa-balance-scale"></i>
-							</div>
-							<div class="form-group has-feedback">
-								<input type="text" class="form-control" id="" placeholder="Thành Phố" required>
-								<i class="form-control-feedback fa fa-location-arrow"></i>
-							</div>
-
-
-							<button type="submit" class="btn btn-primary">Xác nhận</button>
-						</form>
+						<?php echo do_shortcode( '[contact-form-7 id="14" title="Form đăng ký tài xế"]' ); ?>
 					  </div>  <!-- end form dk -->
-
+				
 					</div>
 				</div>  <!-- end col md 8 -->
 			</div>

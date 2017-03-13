@@ -17,12 +17,8 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<!-- <meta charset="utf-8"> -->
-	<link rel="icon" href="images/icon.png" type="image/x-icon">
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/wow.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/myjs.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/jquery.easing.1.3.js"></script>
+	<link rel="icon" href="<?php bloginfo('stylesheet_directory') ?>/images/icon.png" type="image/x-icon">
+
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/css/animate.css">
@@ -34,7 +30,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?>  data-spy="scroll" data-target=".navbar" data-offset="100">
 <div id="page" class="site">
 <!-- 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'a_myproject-wp' ); ?></a> -->
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -50,11 +46,6 @@
 				<a class="navbar-brand" href="#">VANTAI</a>
 			</div>
 
-<!-- 			<?php //wp_nav_menu(array(
-					// 'container' => "div",
-					// 'container_class' => 'collapse navbar-collapse navbar-ex1-collapse',
-					// 'menu_class' => 'nav navbar-nav navbar-right'
-				)); ?> -->
 			<!-- Menu cu-->
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -107,11 +98,11 @@
 
 					<div class="_2nut wow rotateIn"  data-wow-delay="1.8s">
 						<?php if(!empty($nut1)) { ?>
-							<a href="<?php echo $link1; ?>" target="_black"><div class="btn btn-default n3 truckrun"><i class="fa fa-truck andau"></i><?php echo $nut1; ?></div></a>
+							<a data-toggle="tab" href="<?php echo $link1; ?>"><div class="btn btn-default n3 truckrun"><i class="fa fa-truck andau"></i><?php echo $nut1; ?></div></a>
 						<?php } ?>
 
 						<?php if(!empty($nut2)) { ?>
-						<a href="<?php echo $link2; ?>" target="_black"><div class="btn btn-default taixe"><i class="fa fa-pencil-square-o"></i><?php echo $nut2; ?></div></a>
+						<a data-toggle="tab" href="<?php echo $link2; ?>"><div class="btn btn-default taixe"><i class="fa fa-pencil-square-o"></i><?php echo $nut2; ?></div></a>
 						<?php } ?>
 					</div>
 

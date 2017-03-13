@@ -21,6 +21,15 @@
 
 	<!-- back-to-top -->
 	<a href="#" id="back-to-top" class="btn btn-default n1"><span class="fa fa-chevron-up"></span></a>
+
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/jquery-3.1.1.min.js"></script>
+
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/wow.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory') ?>/js/myjs.js"></script>
+
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
